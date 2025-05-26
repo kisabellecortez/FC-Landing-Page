@@ -48,6 +48,26 @@ import STAC6 from '../images/STA-C6.png'
 import STAC7 from '../images/STA-C7.png'
 import STAC8 from '../images/STA-C8.png'
 
+import MARH from '../images/MAR_H.png'
+import MARC1 from '../images/MAR_C1.png'
+import MARC2 from '../images/MAR_C2.png'
+import MARC3 from '../images/MAR_C3.png'
+import MARC4 from '../images/MAR_C4.png'
+import MARC5 from '../images/MAR_C5.png'
+import MARC6 from '../images/MAR_C6.png'
+import MARC7 from '../images/MAR_C7.png'
+import MARC8 from '../images/MAR_C8.png'
+
+import PRH from '../images/PR-H.png'
+import PRC1 from '../images/PR-C1.png'
+import PRC2 from '../images/PR-C2.png'
+import PRC3 from '../images/PR-C3.png'
+import PRC4 from '../images/PR-C4.png'
+import PRC5 from '../images/PR-C5.png'
+import PRC6 from '../images/PR-C6.png'
+import PRC7 from '../images/PR-C7.png'
+import PRC8 from '../images/PR-C8.png'
+
 import MODH from '../images/MOD-H.png'
 import MODC1 from '../images/MOD-C1.png'
 import MODC2 from '../images/MOD-C2.png'
@@ -181,6 +201,7 @@ const Teams = () => {
           </div>
         </div>
 
+        {/* Events */}
         <div className="team-header">
           <div className="header-text">
             <h1>events</h1>
@@ -189,7 +210,7 @@ const Teams = () => {
         </div>
 
         <div className="summary">
-          <p>summary</p>
+          <p>The Events Team is responsible for planning and executing a variety of engaging activities that promote Fashion for Change's mission and enhance community involvement. They take charge of organizing events that showcase our members' talents and contribute to building a strong sense of community. These events serve as platforms to convey our message, leaving a lasting impact on our audience.</p>
         </div>
 
         <div className="collage">
@@ -203,9 +224,11 @@ const Teams = () => {
 
         <div className="box">
           <div className="inner-1">
-            <h1>summary</h1>
+            <h1>Event Managers</h1>
             <ul>
-              <li>summary</li>
+              <li>Plan, coordinate, and execute monthly non-fashion show events to raise awareness and funds.</li>
+              <li>Correspond with WUSA on a regular basis to ensure event compliance.</li>
+              <li>Work with Finance and Sponsorship to determine event feasibility and necessary items required for the success of the event.</li>
             </ul>
           </div>
 
@@ -220,10 +243,7 @@ const Teams = () => {
           </div>
 
           <div className="inner-1">
-            <h1>summary</h1>
-            <ul>
-              <li>summary</li>
-            </ul>
+            <p>Over the past year, the Events Team brought our community together through a wide range of experiences, including the Hearts & Crafts social, our highly aanticipated Theme Reveal, and the Dress to Impress (DTI) showcase, among many others. This team works with dedication and creativity to promote Fashion for Change, engage students, and raise funds for our charitable mission.</p>
           </div>
         </div>
 
@@ -236,7 +256,7 @@ const Teams = () => {
         </div>
 
         <div className="summary">
-          <p>summary</p>
+          <p>The Stage Team operates as the technical backbone of our organization, managing backstage activities, lighting arrangements, props, and all aspects concerning the execution of our shows. This committee, marked by its high level of expertise, collaborates closely with the MOdel and Artistic Teams during the week leading up to the showcase. Furthermore, it offers opportunities for general members and the broader community to engage with Fashion for Change and its core principles.</p>
         </div>
 
         <div className="collage">
@@ -250,9 +270,17 @@ const Teams = () => {
 
         <div className="box">
           <div className="inner-1">
-            <h1>summary</h1>
+            <h1>Stage Managers</h1>
             <ul>
-              <li>summary</li>
+              <li>Run dress rehearsals, cue transitions, and keep backstage running like clockwork.</li>
+            </ul>
+            <h1>Special Lighting Managers</h1>
+            <ul>
+              <li>Design and program lighting sequences that elevate every scene.</li>
+            </ul>
+            <h1>Props Managers Managers</h1>
+            <ul>
+              <li>Create custom pieces that bring designers' and choreographsers' visions to life.</li>
             </ul>
           </div>
 
@@ -267,9 +295,171 @@ const Teams = () => {
           </div>
 
           <div className="inner-1">
-            <h1>summary</h1>
+          </div>
+        </div>
+
+        {/* Marketing */}
+        <div className="team-header">
+          <div className="header-text">
+            <h1>marketing</h1>
+          </div>
+          <img src={MARH} alt="MOD" id="mod"></img>
+        </div>
+
+        <div className="summary">
+          <p>The Marketing Team is responsible for developing and enhancing Fashion for Change's visual identity. They create captivating marketing materials through photography, graphic design, and innovate outreach. Their focus is on promoting our club, events, and initiatives by designing eye-catching promotiional content that appeals to our target audience. Their work not only attracts attention but also adds to the overall aesthetic and branding of Fashion for Change.</p>
+        </div>
+
+        <div className="collage">
+          <img src={MARC1} alt="marketing team"></img>
+          <img src={MARC2} alt="marketing team"></img>
+          <img src={MARC3} alt="marketing team"></img>
+          <img src={MARC4} alt="marketing team"></img>
+          <img src={MARC5} alt="marketing team"></img>
+          <img src={MARC6} alt="marketing team"></img>
+        </div>
+
+        <div className="box">
+          <div className="inner-1">
+            <h1>Social Media Outreach Coordinator</h1>
             <ul>
-              <li>summary</li>
+              <li>Manage and grow Fashion for Change's presence across all social media platforms.</li>
+            </ul>
+            <h1>Blog/Content Writer</h1>
+            <ul>
+              <li>Write engaging and on-brand content for blogs, newsletters, and social media.</li>
+            </ul>
+          </div>
+
+          <div className="inner-2">
+            <img src={MARC7} alt="models"></img>
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="inner-2">
+            <img src={MARC8} alt="models"></img>
+          </div>
+
+          <div className="inner-1">
+            <h1>Graphic Designer</h1>
+            <ul>
+              <li>Design eye-catching digital and print materials that reflect FC's visual identity.</li>
+            </ul>
+            <h1>Photographer</h1>
+            <ul>
+              <li>Capture high-quality photos at events and photoshoots that represent FC's style and energy.</li>
+            </ul>
+            <h1>Videographer</h1>
+            <ul>
+              <li>Film and edit promotional and event videos that showcase FC's mission and community.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Finance */}
+        <div className="team-header">
+          <div className="header-text">
+            <h1>finance</h1>
+          </div>
+          {/* <img src={MODH} alt="MOD" id="mod"></img> */}
+        </div>
+
+        <div className="summary">
+          <p>The Finance Team is dedicated to securing monetary sponsorships and providing essential financial support for Fashion for Change events. They also manage the club's budget with meticulous attention to ensure that financial resources are allocated judiciously to various aspects of our events and initiatives. This includes seeking financial contributions from sponsors, donors, and grants to underpin the club's activites and ambitions.</p>
+        </div>
+
+        <div className="collage">
+          {/* <img src={MODC1} alt="model team"></img>
+          <img src={MODC2} alt="model team"></img>
+          <img src={MODC3} alt="model team"></img>
+          <img src={MODC4} alt="model team"></img>
+          <img src={MODC5} alt="model team"></img>
+          <img src={MODC6} alt="model team"></img> */}
+        </div>
+
+        <div className="box">
+          <div className="inner-1">
+            <h1>Corporate Engagement</h1>
+            <ul>
+              <li>Managers pitch FC to corporate sponsors, handle funding proposals, and process reimbursements.</li>
+            </ul>
+            <h1>Finance Managers</h1>
+            <ul>
+              <li>Maintain our club budget and ensure responsible financial planning for all initiatives.</li>
+            </ul>
+          </div>
+
+          <div className="inner-2">
+            {/* <img src={MODC7} alt="models"></img> */}
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="inner-2">
+            {/* <img src={MODC8} alt="models"></img> */}
+          </div>
+
+          <div className="inner-1">
+            <p>You'll gain hands-on experience in nonprofit finance, sponsorship development, and strategic event budgeting, while learning how to manage real-world financial operations within a creative organization. If you're looking to apply your skills in a way that supports a meaningful cause and directly impacts the success of high-profile events, the Finance Team is where you'll thrive.</p>
+          </div>
+        </div>
+
+        {/* Public Relations */}
+        <div className="team-header">
+          <div className="header-text">
+            <h1>public relations</h1>
+          </div>
+          <img src={PRH} alt="MOD" id="mod"></img>
+        </div>
+
+        <div className="summary">
+          <p>The PR Team specializes in managing our public image and communication efforts. They respresent Fashion for Change across various media outlets, social platforms, and within the University of Waterloo community. This team excels in crafting compelling narratives and mainatining a strong presence for our club in the public eye. They ensure that our message resonates with a wider audience and mainatains a strong presence in the world of arts and fashion.</p>
+        </div>
+
+        <div className="collage">
+          <img src={PRC1} alt="public relations team"></img>
+          <img src={PRC2} alt="public relations team"></img>
+          <img src={PRC3} alt="public relations team"></img>
+          <img src={PRC4} alt="public relations team"></img>
+          <img src={PRC5} alt="public relations team"></img>
+          <img src={PRC6} alt="public relations team"></img>
+        </div>
+
+        <div className="box">
+          <div className="inner-1">
+            <h1>Social Media Outreach Coordinator</h1>
+            <ul>
+              <li>Manage and grow Fashion for Change's presence across all social media platforms.</li>
+            </ul>
+            <h1>Blog/Content Writer</h1>
+            <ul>
+              <li>Write engaging and on-brand content for blogs, newsletters, and social media.</li>
+            </ul>
+          </div>
+
+          <div className="inner-2">
+            <img src={PRC7} alt="models"></img>
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="inner-2">
+            <img src={PRC8} alt="models"></img>
+          </div>
+
+          <div className="inner-1">
+            <h1>Graphic Designer</h1>
+            <ul>
+              <li>Design eye-catching digital and print materials that reflect FC's visual identity.</li>
+            </ul>
+            <h1>Photographer</h1>
+            <ul>
+              <li>Capture high-quality photos at events and photoshoots that represent FC's style and energy.</li>
+            </ul>
+            <h1>Videographer</h1>
+            <ul>
+              <li>Film and edit promotional and event videos that showcase FC's mission and community.</li>
             </ul>
           </div>
         </div>
@@ -283,7 +473,7 @@ const Teams = () => {
         </div>
 
         <div className="summary">
-          <p>summary</p>
+          <p>The Model Team is the group that takes center stage during our performances. At Fashion for Change, we define a "model" as any student willing to embrase new experiences and step beyond their comfort zone by participating in dance and fashion. We do not impose any prerequisites for auditions. The Model Directors, leading this team, serve as advocates for its members, addressing their concerns and need throughout the year.</p>
         </div>
 
         <div className="collage">
@@ -297,9 +487,13 @@ const Teams = () => {
 
         <div className="box">
           <div className="inner-1">
-            <h1>summary</h1>
+            <h1>Models</h1>
             <ul>
-              <li>summary</li>
+              <li>Participate in rehearsals, fittings, photoshoots, and scene performances.</li>
+            </ul>
+            <h1>Model Directors (BOD)</h1>
+            <ul>
+              <li>Organize auditions, manage scheduling, and assign models to scenes in collaboration with the Artistic Team.</li>
             </ul>
           </div>
 
@@ -314,9 +508,62 @@ const Teams = () => {
           </div>
 
           <div className="inner-1">
-            <h1>summary</h1>
+            <h1>Want to join?</h1>
+            <p>No experience? No problem! All you need is confidence and a willingness to grow. This team is about expression, inclusion, and presence both on and off the stage. Audition sign ups go out early fall term, take a look at our Instagram for more information!</p>
+          </div>
+        </div>
+
+        {/* Finance */}
+        <div className="team-header">
+          <div className="header-text">
+            <h1>sponsorship</h1>
+          </div>
+          {/* <img src={MODH} alt="MOD" id="mod"></img> */}
+        </div>
+
+        <div className="summary">
+          <p>The Sponsorship Team is dedicated to securing non-monetary sponsorships, which encompass a variety of valuable products and services that enhance Fashion for Change events. This includes engaging with external partners such as local restaurants, design agencies, and beauty suppliers, and forming mutually beneficial partnerships where sponsors gain exposure during our events. Alingside managing these relationships, this team plays a pivotal role in planning and executing fundraisers, such as auctions for merchandise and ticketed events.</p>
+        </div>
+
+        <div className="collage">
+          {/* <img src={MODC1} alt="model team"></img>
+          <img src={MODC2} alt="model team"></img>
+          <img src={MODC3} alt="model team"></img>
+          <img src={MODC4} alt="model team"></img>
+          <img src={MODC5} alt="model team"></img>
+          <img src={MODC6} alt="model team"></img> */}
+        </div>
+
+        <div className="box">
+          <div className="inner-1">
+            <h1>Fashion Sponsorship Managers</h1>
             <ul>
-              <li>summary</li>
+              <li>Work with clothing brands and designers to outfit our show.</li>
+            </ul>
+            <h1>Events Sponsorship Managers</h1>
+            <ul>
+              <li>Secure prizes, decor, and product donations for fundraisers and showcases.</li>
+            </ul>
+          </div>
+
+          <div className="inner-2">
+            {/* <img src={MODC7} alt="models"></img> */}
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="inner-2">
+            {/* <img src={MODC8} alt="models"></img> */}
+          </div>
+
+          <div className="inner-1">
+            <h1>Sponsorship Coordinators</h1>
+            <ul>
+              <li>Research new leads and maintain communication with current sponsors.</li>
+            </ul>
+            <h1>Sponsorship Head Managers</h1>
+            <ul>
+              <li>Assist with outreach strategy and oversee deliverables.</li>
             </ul>
           </div>
         </div>
