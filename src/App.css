@@ -174,6 +174,7 @@ h2 {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
+  overflow-y: hidden; /* this is key */
   scroll-behavior: smooth;
   padding: 1rem 0;
 }
@@ -198,8 +199,8 @@ h2 {
 
 /* navbar */
 .nav {
-  position: absolute; 
-  top: 0; 
+  position: fixed; 
+    top: 0; 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
@@ -422,4 +423,254 @@ h2 {
 
 .box li{
   color: white; 
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Header section */
+.header-image-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+
+.section-light {
+  background-color: white;
+  color: black;
+  padding: 3rem 5vw; /* use viewport width for responsive padding */
+  max-width: 100%; /* remove fixed max-width */
+}
+
+
+.section-light h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.section-light p {
+  text-align: left;
+  line-height: 1.6;
+  color: black !important;
+}
+
+/* Charity list styling */
+.charities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.charity-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  max-width: none;
+  width: 100%;
+}
+
+.charity-text {
+  flex: 1;
+  text-align: left;
+}
+
+.charity-img {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.charity-text h3 {
+  font-size: 1.3rem;
+  text-transform: lowercase;
+  margin-bottom: 0.5rem;
+}
+
+.charity-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* About section */
+.about-section {
+  background-color: black;
+  color: white;
+  padding: 4rem 5vw; /* dynamic horizontal padding */
+  width: 100%;
+}
+
+.about-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* add this to push img/text to edges */
+}
+
+
+.about-img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left; /* Fix alignment */
+}
+
+.about-paragraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  text-align: left; /* Fix alignment */
+}
+
+
+/* Teams section */
+.teams-section {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.teams-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: lowercase;
+  font-family: 'Futura', sans-serif;
+}
+
+.teams-gallery {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-card {
+  width: 180px;
+  text-align: center;
+  background-color: black;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 240px;
+}
+
+.team-card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.event-entry {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.event-img {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.event-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-info h3 {
+  text-align: left;
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+
+.event-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+
+.placeholder-box {
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }

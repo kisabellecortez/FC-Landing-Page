@@ -8,17 +8,21 @@ const Home = () => (
     <Hero />
     <Nav />
 
-    {/* About Us + Events side-by-side */}
     <div className="grid-two">
       <div>
         <h2>about us</h2>
-        <div className="card bordered-card"></div>
+        <div className="card bordered-card">
+          <img src="your_about_us_image.jpg" alt="About us" className="home-img" />
+        </div>
       </div>
       <div>
         <h2>events</h2>
-        <div className="card bordered-card"></div>
+        <div className="card bordered-card">
+          <img src="your_events_image.jpg" alt="Events" className="home-img" />
+        </div>
       </div>
     </div>
+
 
 
     {/* Sponsorship full width */}
@@ -75,17 +79,17 @@ const Home = () => (
       <h2>past shows</h2>
       <div className="horizontal-scroll-wrapper">
         <div className="horizontal-scroll" id="past-shows-scroll">
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-        <div className="show-card" />
-      </div>
-      <button
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+          <div className="show-card" />
+        </div>
+        <button
           className="scroll-arrow"
           onClick={() => {
             const scrollContainer = document.getElementById("past-shows-scroll");
@@ -94,7 +98,7 @@ const Home = () => (
         >
           ❯
         </button>
-    </div>
+      </div>
     </div>
     <Footer />
   </div>

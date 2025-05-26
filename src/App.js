@@ -6,6 +6,7 @@ import Shows from './pages/Shows.js'
 import Sponsorship from './pages/Sponsorship.js'
 import Team from './pages/Teams.js'
 import Home from './pages/Home.js'
+import StandFor from './pages/StandFor.js'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         <Route
           path="/events"
           element={<Events/>}
+        />
+        <Route
+          path="/stand-for"
+          element={<StandFor/>}
         />
         <Route
           path="/sponsorship"
