@@ -14,6 +14,15 @@ import ShowsFCMAS from './pages/ShowsFCMAS.js'
 import ShowsPandoras from './pages/ShowsPandoras.js'
 import ShowsTTD from './pages/ShowsTTD.js'
 import ShowsSYTYGS from './pages/ShowsSYTYGS.js'
+
+import AcademyAwards from './pages/Shows/AcademyAwards.js'
+import Arcana from './pages/Shows/Arcana.js'
+import CoverToCover from './pages/Shows/CoverToCover.js'
+import DirectorsCut from './pages/Shows/DirectorsCut.js'
+import SpunFromGold from './pages/Shows/SpunFromGold.js'
+import Soul from './pages/Shows/Soul.js'
+import Tuesday from './pages/Shows/Tuesday.js'
+
 function App() {
   return (
     <div className="App">
@@ -27,6 +36,34 @@ function App() {
           <Route
             path="/about-us"
             element={<AboutUs />}
+          />
+          <Route
+            path="/past-shows/academy-awards"
+            element={<AcademyAwards/>}
+          />
+          <Route
+            path="/past-shows/arcana"
+            element={<Arcana/>}
+          />
+          <Route
+            path="/past-shows/cover-to-cover"
+            element={<CoverToCover/>}
+          />
+          <Route
+            path="/past-shows/directors-cut"
+            element={<DirectorsCut/>}
+          />
+          <Route
+            path="/past-shows/soul"
+            element={<Soul/>}
+          />
+          <Route
+            path="/past-shows/spun-from-gold"
+            element={<SpunFromGold/>}
+          />
+          <Route
+            path="/past-shows/tuesday"
+            element={<Tuesday/>}
           />
           <Route
             path="/past-shows/ffc"
