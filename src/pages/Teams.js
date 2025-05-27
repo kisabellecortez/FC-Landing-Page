@@ -78,6 +78,11 @@ import MODC6 from '../images/MOD-C6.png'
 import MODC7 from '../images/MOD-C7.png'
 import MODC8 from '../images/MOD-C8.png'
 
+import SPOC1 from '../images/SPO-H.png'
+import SPOC2 from '../images/SPO-C1.png'
+import SPOC3 from '../images/SPO-C2.png'
+import SPOC4 from '../images/SPO-C3.png'
+
 const Teams = () => {
     return(
       <div className="teams">
@@ -526,12 +531,9 @@ const Teams = () => {
         </div>
 
         <div className="collage">
-          {/* <img src={MODC1} alt="model team"></img>
-          <img src={MODC2} alt="model team"></img>
-          <img src={MODC3} alt="model team"></img>
-          <img src={MODC4} alt="model team"></img>
-          <img src={MODC5} alt="model team"></img>
-          <img src={MODC6} alt="model team"></img> */}
+          <img src={SPOC1} alt="model team"></img>
+          <img src={SPOC2} alt="model team"></img>
+          <img src={SPOC3} alt="model team"></img>
         </div>
 
         <div className="box">
@@ -547,7 +549,7 @@ const Teams = () => {
           </div>
 
           <div className="inner-2">
-            {/* <img src={MODC7} alt="models"></img> */}
+            <img src={SPOC4} alt="models"></img>
           </div>
         </div>
 
