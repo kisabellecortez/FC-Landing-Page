@@ -286,6 +286,32 @@ h2 {
 }
 
 /* Teams Page */
+.director-container{
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+}
+
+.directors, .presidents{
+  width: 50%;
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-start; 
+  gap: 3vh; 
+  margin-top: 8vh; 
+  margin-bottom: 8vh; 
+}
+
+.presidents img{
+  width: 350px; 
+  height: 350px;
+}
+
+.directors img{
+  width: 300px; 
+  height: 300px; 
+}
+
 .teams{
   margin-top: 10vh; 
   height: auto; 
@@ -369,6 +395,7 @@ h2 {
   flex-direction: row; 
   flex-wrap: wrap; 
   justify-content: space-evenly; 
+  align-items: center; 
 }
 
 .collage img{
@@ -392,7 +419,7 @@ h2 {
   margin-right: 2.5%
 }
 
-.box li, .box h1{
+.box li, .box h1, .box p{
   text-align: left; 
 }
 
@@ -406,8 +433,11 @@ h2 {
   justify-content: space-between;
 }
 
-.box li{
+.box p, .box li{
   font-size: 4vh; 
+}
+
+.box li{
   margin-bottom: 5vh;
 }
 
