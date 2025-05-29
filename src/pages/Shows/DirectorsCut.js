@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
-import header from "../../images/SpunFromGold-Header.png";
+import header from "../../images/DirectorsCut-Header.png";
 
 const DirectorsCut = () => {
     const imageCount = 15; 
@@ -17,7 +17,7 @@ const DirectorsCut = () => {
                 <h1 className="title">Directors Cut</h1>
                 <h1 className="year">(2011 - 2012)</h1>
             </div>
-
+        
             <p>Summary</p>
 
             <div className="gallery-grid">

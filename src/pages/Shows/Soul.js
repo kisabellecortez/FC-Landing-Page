@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
-import header from "../../images/SpunFromGold-Header.png";
+import header from "../../images/Soul-Header.png";
 
 const Soul = () => {
     const imageCount = 15; 

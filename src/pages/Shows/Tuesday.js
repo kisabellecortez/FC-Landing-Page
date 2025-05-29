@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
-import header from "../../images/SpunFromGold-Header.png";
+import header from "../../images/Tuesday-Header.png";
 
 const Tuesday = () => {
     const imageCount = 15; 
@@ -14,7 +14,7 @@ const Tuesday = () => {
             <img className="header" src={header} alt="past shows"/>
 
             <div className="title-container">
-                <h1 className="title">Tuesday</h1>
+                <h1 className="title">tuesday</h1>
                 <h1 className="year">(2018 - 2019)</h1>
             </div>
 

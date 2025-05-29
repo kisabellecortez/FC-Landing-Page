@@ -3,20 +3,18 @@ import Footer from '../components/Footer';
 
 import BOD1 from '../images/BOD-1.png'
 import BOD2 from '../images/BOD-2.png'
-import BODC1 from '../images/BOD-C1.png'
-import BODC2 from '../images/BOD-C2.png'
-import BODC3 from '../images/BOD-C3.png'
-import BODC4 from '../images/BOD-C4.png'
-import BODC5 from '../images/BOD-C5.png'
-import BODC6 from '../images/BOD-C6.png'
-import BODC7 from '../images/BOD-C7.png'
-import BODC8 from '../images/BOD-C8.png'
-import BODC9 from '../images/BOD-C9.png'
-import BODC10 from '../images/BOD-C10.png'
-import BODC11 from '../images/BOD-C11.png'
-import BODC12 from '../images/BOD-C12.png'
-import BODC13 from '../images/BOD-C13.png'
-import BODC14 from '../images/BOD-C14.png'
+import BODart from '../images/BOD-art.png'
+import BODeve from '../images/BOD-eve.png'
+import BODfin from '../images/BOD-fin.png'
+import BODmar from '../images/BOD-mar.png'
+import BODmod1 from '../images/BOD-mod1.png'
+import BODmod2 from '../images/BOD-mod2.png'
+import BODp from '../images/BOD-p.png'
+import BODpr from '../images/BOD-pr.png'
+import BODspo from '../images/BOD-spon.png'
+import BODsta from '../images/BOD-sta.png'
+import BODvp from '../images/BOD-vp.png'
+import BOD from '../images/BOD.png'
 
 import ART_H from '../images/ART-H.png'
 import ARTC1 from '../images/ART-C1.png'
@@ -109,46 +107,118 @@ const Teams = () => {
           <img src={BOD2} alt="BOD"></img>
         </div>
 
-        <div className="collage">
-          <img src={BODC1} alt="bod"></img>
-          <img src={BODC2} alt="bod"></img>
-          <img src={BODC3} alt="bod"></img>
-          <img src={BODC4} alt="bod"></img>
-          <img src={BODC5} alt="bod"></img>
-          <img src={BODC6} alt="bod"></img>
-          <img src={BODC7} alt="bod"></img>
-          <img src={BODC8} alt="bod"></img>
-          <img src={BODC9} alt="bod"></img>
-          <img src={BODC10} alt="bod"></img>
-          <img src={BODC11} alt="bod"></img>
-          <img src={BODC12} alt="bod"></img>
+        <h1>Board of Directors (BOD)</h1>
+        <h2>Purpose</h2>
+        <p>The Board of Directors (BOD) leads the strategic direction and execution of Fashion for Change. Each director oversees their respective commmittee, making key decisions that shape the creative and operational success of the club. The BOD collaborates to ensure every show, event, and initiative aligns with our mission of creativity, inclusivity, and charitable impact. Together, they mentor their teams, foster collaboration, and create a platform where passion and purpose meet.</p>
+
+        <div className="director-container">
+          
+          <div className="presidents">
+            <div>
+              <h1>President</h1>
+              <img src={BODp} alt="president"></img>
+            </div>
+            <div>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="presidents">
+            <div>
+              <h1>Vice President</h1>
+              <img src={BODvp} alt="vice president"></img>
+            </div>
+            <div>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODart} alt="artistic director"></img>
+            </div>
+            <div>
+              <h1>Artistic</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODmod1} alt="model director"></img>
+              <img src={BODmod2} alt="model director"></img>
+            </div>
+            <div>
+              <h1>Model</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODsta} alt="stage director"></img>
+            </div>
+            <div>
+              <h1>Stage</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODfin} alt="finance director"></img>
+            </div>
+            <div>
+              <h1>Finance</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODmar} alt="marketing director"></img>
+            </div>
+            <div>
+              <h1>Marketing</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODpr} alt="pr director"></img>
+            </div>
+            <div>
+              <h1>Public Relations</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODspo} alt="sponsorship director"></img>
+            </div>
+            <div>
+              <h1>Sponsorship</h1>
+              <p>summary</p>
+            </div>
+          </div>
+
+          <div className="directors">
+            <div>
+              <img src={BODeve} alt="events director"></img>
+            </div>
+            <div>
+              <h1>Events</h1>
+              <p>summary</p>
+            </div>
+          </div>
         </div>
 
-        <div className="box">
-          <div className="inner-1">
-            <h1>summary</h1>
-            <ul>
-              <li>summary</li>
-            </ul>
-          </div>
+        <h1>Time Commitment</h1>
+        <p>Directors are expected to commit approximately <p className="bold">5-10 hours</p> per week, with time increasing during major events such as auditions, showcases, and show week. This includes team meetings, planning sessions, hands-on event coordination, and communication with executive members. Directors should be prepared to lead, adapt, and invest energy into their team's development and the club's overall success.</p>
 
-          <div className="inner-2">
-            <img src={BODC13} alt="models"></img>
-          </div>
-        </div>
-
-        <div className="box">
-          <div className="inner-2">
-            <img src={BODC14} alt="models"></img>
-          </div>
-
-          <div className="inner-1">
-            <h1>summary</h1>
-            <ul>
-              <li>summary</li>
-            </ul>
-          </div>
-        </div>
+        <img src={BOD} alt="bod"></img>
 
         {/* Artistic */}
         <div className="team-header">
