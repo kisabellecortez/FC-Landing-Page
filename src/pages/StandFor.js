@@ -55,7 +55,6 @@ const StandFor = () => {
         </p>
 
         {/* Past Charities */}
-        <h2>Past Charities</h2>
         <div className="charities-list">
           {pastCharities.map((charity, index) => (
             <div className="charity-entry" key={index}>
