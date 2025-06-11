@@ -5,6 +5,13 @@ import Events from './pages/Events.js'
 import Shows from './pages/Shows.js'
 import Sponsorship from './pages/Sponsorship.js'
 import Team from './pages/Teams.js'
+import TeamsBOD from './pages/TeamsBOD.js'
+import TeamsArtistic from './pages/TeamsArtistic.js'
+import TeamsEvents from './pages/TeamsEvents.js'
+import TeamsStage from './pages/TeamsStage.js'
+import TeamsFinance from './pages/TeamsFinance.js'
+import TeamsModel from './pages/TeamsModel.js'
+import TeamsPR from './pages/TeamsPR.js'
 import Home from './pages/Home.js'
 import StandFor from './pages/StandFor.js'
 
@@ -105,6 +112,34 @@ function App() {
           <Route
             path="/teams"
             element={<Team />}
+          />
+          <Route
+            path="/teams/bod"
+            element={<TeamsBOD />}
+          />
+          <Route
+            path="/teams/artistic"
+            element={<TeamsArtistic />}
+          />
+          <Route
+            path="/teams/events"
+            element={<TeamsEvents />}
+          />
+          <Route
+            path="/teams/stage"
+            element={<TeamsStage />}
+          />
+          <Route
+            path="/teams/finance"
+            element={<TeamsFinance />}
+          />
+          <Route
+            path="/teams/model"
+            element={<TeamsModel />}
+          />
+          <Route
+            path="/teams/pr"
+            element={<TeamsPR />}
           />
           <Route
             path="/shows"

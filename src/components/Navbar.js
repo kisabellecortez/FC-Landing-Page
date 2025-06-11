@@ -1,8 +1,8 @@
 import '../App.css'
 import logo from '../images/FC-Logo.svg'
 
-export default function Navbar(){
-    return(
+export default function Navbar() {
+    return (
         <div className="nav">
 
             <a href='/'>
@@ -11,11 +11,19 @@ export default function Navbar(){
 
             <div className="pages">
                 <a href='/about-us'>about us</a>
-                <a href='/events'>events</a>
-                <a href='/sponsorship'>sponsorship</a>
-                <a href='/teams'>teams</a>
-                <a href='/stand-for'>stand for</a>
+                <div className="dropdown">
+                    <a href='/teams'>teams</a>
 
+                    <div className="dropdown-content">
+                        <a href="/teams/bod">Board of Directors</a>
+                        <a href="/teams/artistic">Artistic</a>
+                        <a href="/teams/events">Events</a>
+                        <a href="/teams/stage">Stage</a>
+                        <a href="/teams/finance">Finance</a>
+                        <a href="/teams/pr">Public Relations</a>
+                        <a href="/teams/model">Model</a>
+                    </div>
+                </div>
                 <div className="dropdown">
                     <a href='/shows'>shows</a>
 
@@ -32,9 +40,13 @@ export default function Navbar(){
                         <a href="/past-shows/enchanted">Enchanted</a>
                         <a href="/past-shows/cover-to-cover">Cover To Cover</a>
                         <a href="/past-shows/directors-cut">Directors Cut</a>
-                        <a href="/past-shows/ffc">Fashion For Change</a> 
+                        <a href="/past-shows/ffc">Fashion For Change</a>
                     </div>
                 </div>
+                <a href='/events'>events</a>
+                <a href='/sponsorship'>sponsorship</a>
+                <a href='/stand-for'>stand for</a>
+
             </div>
         </div>
     )
