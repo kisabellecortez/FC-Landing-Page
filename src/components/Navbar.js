@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="pages">
                 <a href='/about-us'>about us</a>
                 <div className="dropdown">
-                    <a href='/teams'>teams</a>
+                    <a href='/teams/bod'>teams</a>
 
                     <div className="dropdown-content">
                         <a href="/teams/bod">Board of Directors</a>
@@ -22,10 +22,11 @@ export default function Navbar() {
                         <a href="/teams/finance">Finance</a>
                         <a href="/teams/pr">Public Relations</a>
                         <a href="/teams/model">Model</a>
+                        <a href="/teams/sponsorship">Sponsorship</a>
                     </div>
                 </div>
                 <div className="dropdown">
-                    <a href='/shows'>shows</a>
+                    <a href='/past-shows/arcana'>shows</a>
 
                     <div className="dropdown-content">
                         <a href="/past-shows/arcana">Arcana</a>

@@ -11,8 +11,9 @@ const Tuesday = () => {
         <div className="shows">
             <Nav />
 
-            <img className="header" src={header} alt="past shows"/>
-
+                       <div className="header-image-section">
+          <img src={header} alt="tuesday" className="header-image" />
+        </div>
             <div className="title-container">
                 <h1 className="title">tuesday</h1>
                 <h1 className="year">(2018 - 2019)</h1>

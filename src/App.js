@@ -5,6 +5,7 @@ import Events from './pages/Events.js'
 import Shows from './pages/Shows.js'
 import Sponsorship from './pages/Sponsorship.js'
 import Team from './pages/Teams.js'
+import TeamsSponsorship from './pages/TeamsSponsorship.js'
 import TeamsBOD from './pages/TeamsBOD.js'
 import TeamsArtistic from './pages/TeamsArtistic.js'
 import TeamsEvents from './pages/TeamsEvents.js'
@@ -132,6 +133,10 @@ function App() {
           <Route
             path="/teams/finance"
             element={<TeamsFinance />}
+          />
+          <Route
+            path="/teams/sponsorship"
+            element={<TeamsSponsorship />}
           />
           <Route
             path="/teams/model"

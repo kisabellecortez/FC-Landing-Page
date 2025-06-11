@@ -417,26 +417,27 @@ p {
 .summary {
   width: 80%;
   margin: auto;
-  font-size: 3.5vh;
+  font-size: 20px;
 }
 
 .collage {
-  margin: 10vh 0 10vh 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem; /* spacing between images */
+  padding: 4rem 2rem 2rem 2rem; /* Top, right, bottom, left */
+  justify-items: center;
   align-items: center;
 }
 
 .collage img {
-  width: 50vh;
-  margin-bottom: 5vh;
+  width: 100%;
+  max-width: 300px; /* limit width for consistent layout */
+  border-radius: 10px;
 }
 
 .teams .box {
   width: 95%;
-  height: 100vh;
+  padding: 3rem 0; /* space inside the box */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -447,7 +448,7 @@ p {
   width: 50%;
   float: left;
   margin-left: 2.5%;
-  margin-right: 2.5%
+  margin-right: 2.5%;
 }
 
 .box li,
@@ -456,9 +457,6 @@ p {
   text-align: left;
 }
 
-.box h1 {
-  margin-bottom: 8vh;
-}
 
 .box ul {
   display: flex;
@@ -468,11 +466,11 @@ p {
 
 .box p,
 .box li {
-  font-size: 4vh;
+  font-size: 18px;
 }
 
 .box li {
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .box .inner-2 {
@@ -645,7 +643,7 @@ p {
 .about-section {
   background-color: black;
   color: white;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 1rem 2rem; /* top, right, bottom, left */
   width: 100%;
   box-sizing: border-box;
 }
@@ -665,7 +663,7 @@ p {
 }
 
 .about-paragraph-below {
-  padding: 2rem 2rem;
+  padding: 0rem 0rem;
   width: 100%;
   color: white;
   font-size: 22px;
@@ -753,25 +751,41 @@ p {
 }
 
 .team-card {
+  position: relative;
   width: 180px;
+  height: 180px;
   text-align: center;
   background-color: black;
   border-radius: 10px;
+  overflow: hidden;
   flex-shrink: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
 }
 
 .team-card img {
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
   object-fit: cover;
-  height: auto;
-  margin-bottom: 0.5rem;
-
+  display: block;
+  border-radius: 10px;
 }
+
+/* NEW: label on top of image */
+.team-label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: lowercase;
+  background: rgba(0, 0, 0, 0.4); /* subtle dark overlay for contrast */
+  padding: 4px 0;
+}
+
 
 .team-card p {
   color: white;

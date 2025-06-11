@@ -11,8 +11,9 @@ const SpunFromGold = () => {
         <div className="shows">
             <Nav />
 
-            <img className="header" src={header} alt="past shows"/>
-
+                       <div className="header-image-section">
+          <img src={header} alt="spun from gold" className="header-image" />
+        </div>
             <div className="title-container">
                 <h1 className="title">Spun From Gold</h1>
                 <h1 className="year">(2023 - 2024)</h1>

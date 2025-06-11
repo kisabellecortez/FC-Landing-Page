@@ -11,8 +11,9 @@ const AcademyAwards = () => {
         <div className="shows">
             <Nav />
 
-            <img className="header" src={header} alt="past shows"/>
-
+                       <div className="header-image-section">
+          <img src={header} alt="academy awards" className="header-image" />
+        </div>
             <div className="title-container">
                 <h1 className="title">The Academy Awards</h1>
                 <h1 className="year">(2021 - 2022)</h1>

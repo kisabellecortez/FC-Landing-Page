@@ -11,8 +11,9 @@ const Arcana = () => {
         <div className="shows">
             <Nav />
 
-            <img className="header" src={header} alt="past shows"/>
-
+                       <div className="header-image-section">
+          <img src={header} alt="arcana" className="header-image" />
+        </div>
             <div className="title-container">
                 <h1 className="title">Arcana</h1>
                 <h1 className="year">(2024 - 2025)</h1>

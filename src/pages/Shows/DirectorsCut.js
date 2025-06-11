@@ -11,8 +11,9 @@ const DirectorsCut = () => {
         <div className="shows">
             <Nav />
 
-            <img className="header" src={header} alt="past shows"/>
-
+                       <div className="header-image-section">
+          <img src={header} alt="directors cut" className="header-image" />
+        </div>
             <div className="title-container">
                 <h1 className="title">Directors Cut</h1>
                 <h1 className="year">(2011 - 2012)</h1>

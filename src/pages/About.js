@@ -8,6 +8,11 @@ import groupImage from "../images/about-group.png";
 import team1 from "../images/team-bod.png";
 import team2 from "../images/team-artistic.png";
 import team3 from "../images/team-events.png";
+import PRH from "../images/PR-H.png";
+import MODH from "../images/MOD-H.png";
+import SPOH from "../images/SPO-H.png";
+import STAH from "../images/STA-H.png";
+import { Link } from "react-router-dom"; // <-- import Link at the top
 
 const About = () => {
   return (
@@ -46,42 +51,38 @@ const About = () => {
           <h2>our teams</h2>
           <div className="horizontal-scroll-wrapper">
             <div className="horizontal-scroll" id="teams-scroll">
-              <div className="team-card">
+              <Link to="/teams/bod" className="team-card">
                 <img src={team1} alt="bod" />
-                <p>bod</p>
-              </div>
-              <div className="team-card">
+  <div className="team-label">bod</div>
+              </Link>
+              <Link to="/teams/artistic" className="team-card">
                 <img src={team2} alt="artistic" />
-                <p>artistic</p>
-              </div>
-              <div className="team-card">
+  <div className="team-label">artistic</div>
+              </Link>
+              <Link to="/teams/events" className="team-card">
                 <img src={team3} alt="events" />
-                <p>events</p>
-              </div>
-              <div className="team-card">
-                <img src={team1} alt="bod" />
-                <p>bod</p>
-              </div>
-              <div className="team-card">
-                <img src={team2} alt="artistic" />
-                <p>artistic</p>
-              </div>
-              <div className="team-card">
-                <img src={team3} alt="events" />
-                <p>events</p>
-              </div>
-              <div className="team-card">
-                <img src={team1} alt="bod" />
-                <p>bod</p>
-              </div>
-              <div className="team-card">
-                <img src={team2} alt="artistic" />
-                <p>artistic</p>
-              </div>
-              <div className="team-card">
-                <img src={team3} alt="events" />
-                <p>events</p>
-              </div>
+  <div className="team-label">events</div>
+              </Link>
+              <Link to="/teams/stage" className="team-card">
+                <img src={STAH} alt="stage" />
+  <div className="team-label">stage</div>
+              </Link>
+              <Link to="/teams/finance" className="team-card">
+                <img src={team2} alt="finance" />
+  <div className="team-label">finance</div>
+              </Link>
+              <Link to="/teams/pr" className="team-card">
+                <img src={PRH} alt="pr" />
+  <div className="team-label">public relations</div>
+              </Link>
+              <Link to="/teams/model" className="team-card">
+                <img src={MODH} alt="model" />
+  <div className="team-label">model</div>
+              </Link>
+              <Link to="/teams/sponsorships" className="team-card">
+                <img src={SPOH} alt="sponsorships" />
+  <div className="team-label">sponsorship</div>
+              </Link>
             </div>
             <button
               className="scroll-arrow"

@@ -11,8 +11,9 @@ const CoverToCover = () => {
         <div className="shows">
             <Nav />
 
-            <img className="header" src={header} alt="past shows"/>
-
+                       <div className="header-image-section">
+          <img src={header} alt="cover to cover" className="header-image" />
+        </div>
             <div className="title-container">
                 <h1 className="title">CoverToCover</h1>
                 <h1 className="year">(2012 - 2013)</h1>
