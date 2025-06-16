@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./Sponsorship.css";
 import spons_H from "../images/spons_H.png";
+import { Link } from "react-router-dom";
 
 const Sponsorship = () => {
   return (
@@ -40,12 +41,10 @@ const Sponsorship = () => {
               >
                 Sponsorship Package
               </a>
-              <a
-                href="mailto:fcatuw@gmail.com"
-                className="sponsor-button black-button"
-              >
-                Contact Us!
-              </a>
+<Link to="/contact-us" className="sponsor-button black-button">
+  Contact Us!
+</Link>
+
             </div>
           </div>
         </div>

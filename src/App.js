@@ -15,7 +15,7 @@ import TeamsModel from './pages/TeamsModel.js'
 import TeamsPR from './pages/TeamsPR.js'
 import Home from './pages/Home.js'
 import StandFor from './pages/StandFor.js'
-
+import ContactUs from './pages/ContactUs.js'
 import ShowsFFC from './pages/ShowsFFC.js'
 import ShowsEnchanted from './pages/ShowsEnchanted.js'
 import ShowsFCMAS from './pages/ShowsFCMAS.js'
@@ -113,6 +113,10 @@ function App() {
           <Route
             path="/teams"
             element={<Team />}
+          />
+                    <Route
+            path="/contact-us"
+            element={<ContactUs />}
           />
           <Route
             path="/teams/bod"

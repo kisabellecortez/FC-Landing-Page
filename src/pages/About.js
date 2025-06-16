@@ -69,34 +69,55 @@ const About = () => {
       <h2>our teams</h2>
       <div className="carousel-wrapper">
         <div className="carousel-scroll">
+          <Link to="/teams/bod" className="team-card">
           <div className="team-card">
             <img src={team1} alt="BOD" />
             <p className="team-label">bod</p>
           </div>
+          </Link>
+
+          <Link to="/teams/artistic" className="team-card">
           <div className="team-card">
             <img src={team2} alt="Artistic" />
             <p className="team-label">artistic</p>
           </div>
+          </Link>
+
+          <Link to="/teams/events" className="team-card">
           <div className="team-card">
             <img src={team3} alt="Events" />
             <p className="team-label">events</p>
           </div>
+          </Link>
+
+          <Link to="/teams/pr" className="team-card">
           <div className="team-card">
             <img src={PRH} alt="PR" />
             <p className="team-label">public relations</p>
           </div>
+          </Link>
+
+          <Link to="/teams/model" className="team-card">
           <div className="team-card">
             <img src={MODH} alt="Models" />
             <p className="team-label">models</p>
           </div>
+          </Link>
+
+          <Link to="/teams/sponsorship" className="team-card">
           <div className="team-card">
             <img src={SPOH} alt="Sponsorships" />
             <p className="team-label">sponsorships</p>
           </div>
+          </Link>
+
+          <Link to="/teams/stage" className="team-card">
           <div className="team-card">
             <img src={STAH} alt="Stage" />
             <p className="team-label">stage</p>
           </div>
+          </Link>
+
           {/* Add more cards if needed */}
         </div>
       </div>
