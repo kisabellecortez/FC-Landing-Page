@@ -423,8 +423,8 @@ p {
 .collage {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 2rem; /* spacing between images */
-  padding: 4rem 2rem 2rem 2rem; /* Top, right, bottom, left */
+  gap: 1rem 0rem; /* spacing between images */
+  padding: 2rem 0rem 2rem 0rem; /* Top, right, bottom, left */
   justify-items: center;
   align-items: center;
 }
@@ -445,7 +445,7 @@ p {
 }
 
 .box .inner-1 {
-  width: 50%;
+  width: 70%;
   float: left;
   margin-left: 2.5%;
   margin-right: 2.5%;
@@ -470,11 +470,11 @@ p {
 }
 
 .box li {
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
 }
 
 .box .inner-2 {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -46,7 +46,7 @@ export default function Navbar() {
                 </div>
                 <a href='/events'>events</a>
                 <a href='/sponsorship'>sponsorship</a>
-                <a href='/stand-for'>stand for</a>
+                <a href='/stand-for'>charities</a>
 
             </div>
         </div>

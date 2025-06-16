@@ -2,7 +2,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "../App.css";
+import "./About.css";
+import Typewriter from 'typewriter-effect';
 import headerImage from "../images/about-header.png";
 import groupImage from "../images/about-group.png";
 import team1 from "../images/team-bod.png";
@@ -26,75 +27,80 @@ const About = () => {
             <h1>about us</h1>
           </div>
         </div>
-        <div className="intro-banner">
-          <h2 className="intro-line">hi! welcome to fc :</h2>
-          <h2 className="intro-line">a place for...</h2>
-        </div>
+        
+        <div className="homepage">
+      <h1>hi! welcome to fc :)</h1>
+      <h2 className="typing-line">
+        a place for{' '} <span className="typewriter">
+          <Typewriter
+            options={{
+              strings: ['models', 'dancers', 'designers'],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+              deleteSpeed: 40,
+              pauseFor: 1200,
+            }}
+          />
+        </span>
+      </h2>
 
-        <div className="about-section">
-          <div className="about-grid">
-            <img src={groupImage} alt="group" className="about-img" />
-            <p className="about-text">
-              Fashion for Change is a non-profit organization that unites students at the University of Waterloo and Wilfrid Laurier University to host the largest student-run charity fashion show in the K-W region. Over the past 10 years as a club, we have raised over $125,000 for charity! With over 130 executives and models yearly, our family is full of passionate students that use our talents to change the world! We use fashion, dance, film, music, and other mediums to promote artistic expression.
-            </p>
+      <div className="intro-section">
+        <img src={groupImage} alt="Fashion for Change Group" className="intro-img" />
+        <p>
+          Fashion for Change is more than just a "fashion club". We are a non-profit organization that unites
+          students at the University of Waterloo and Wilfrid Laurier University to host the largest student-run
+          charity fashion show in the K-W region. Over the past 10 years as a club, we have raised over $125,000
+          for charity! With over 130 executives and models yearly, our family is full of passionate students that
+          use our talents to change the world! We use fashion, dance, film, music, and other mediums to promote
+          artistic expression.
+
+                  Each year, over 130 student volunteers from the University of Waterloo and Wilfrid Laurier University come
+        together to create a vibrant blend of fashion, dance, film, music, and multimedia. Through these artistic
+        mediums, we raise awareness and funds for meaningful charitable causes.
+
+                At Fashion for Change, we believe creativity has the power to inspire action. We provide a space where
+        students can express themselves, collaborate across disciplines, and make a lasting impact on their
+        community. From the first concept to the final spotlight, Fashion for Change is a celebration of identity,
+        innovation, and collective purpose.
+        </p>
+      </div>
+
+      <h2>our teams</h2>
+      <div className="carousel-wrapper">
+        <div className="carousel-scroll">
+          <div className="team-card">
+            <img src={team1} alt="BOD" />
+            <p className="team-label">bod</p>
           </div>
-
-          <div className="about-paragraph-below">
-            <p>
-              Each year, over 130 student volunteers from the University of Waterloo and Wilfrid Laurier University come together to create a vibrant blend of fashion, dance, film, music, and multimedia. Through these artistic mediums, we raise awareness and funds for meaningful charitable causes. At Fashion for Change, we believe creativity has the power to inspire action. We provide a space where students can express themselves, collaborate across disciplines, and make a lasting impact on their community. From the first concept to the final spotlight, Fashion for Change is a celebration of identity, innovation, and collective purpose.
-            </p>
+          <div className="team-card">
+            <img src={team2} alt="Artistic" />
+            <p className="team-label">artistic</p>
           </div>
-        </div>
-
-
-        <div className="full-width teams-section">
-          <h2>our teams</h2>
-          <div className="horizontal-scroll-wrapper">
-            <div className="horizontal-scroll" id="teams-scroll">
-              <Link to="/teams/bod" className="team-card">
-                <img src={team1} alt="bod" />
-  <div className="team-label">bod</div>
-              </Link>
-              <Link to="/teams/artistic" className="team-card">
-                <img src={team2} alt="artistic" />
-  <div className="team-label">artistic</div>
-              </Link>
-              <Link to="/teams/events" className="team-card">
-                <img src={team3} alt="events" />
-  <div className="team-label">events</div>
-              </Link>
-              <Link to="/teams/stage" className="team-card">
-                <img src={STAH} alt="stage" />
-  <div className="team-label">stage</div>
-              </Link>
-              <Link to="/teams/finance" className="team-card">
-                <img src={team2} alt="finance" />
-  <div className="team-label">finance</div>
-              </Link>
-              <Link to="/teams/pr" className="team-card">
-                <img src={PRH} alt="pr" />
-  <div className="team-label">public relations</div>
-              </Link>
-              <Link to="/teams/model" className="team-card">
-                <img src={MODH} alt="model" />
-  <div className="team-label">model</div>
-              </Link>
-              <Link to="/teams/sponsorships" className="team-card">
-                <img src={SPOH} alt="sponsorships" />
-  <div className="team-label">sponsorship</div>
-              </Link>
-            </div>
-            <button
-              className="scroll-arrow"
-              onClick={() => {
-                const scrollContainer = document.getElementById("teams-scroll");
-                scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
-              }}
-            >
-              ❯
-            </button>
+          <div className="team-card">
+            <img src={team3} alt="Events" />
+            <p className="team-label">events</p>
           </div>
+          <div className="team-card">
+            <img src={PRH} alt="PR" />
+            <p className="team-label">public relations</p>
+          </div>
+          <div className="team-card">
+            <img src={MODH} alt="Models" />
+            <p className="team-label">models</p>
+          </div>
+          <div className="team-card">
+            <img src={SPOH} alt="Sponsorships" />
+            <p className="team-label">sponsorships</p>
+          </div>
+          <div className="team-card">
+            <img src={STAH} alt="Stage" />
+            <p className="team-label">stage</p>
+          </div>
+          {/* Add more cards if needed */}
         </div>
+      </div>
+    </div>
 
         <Footer />
 

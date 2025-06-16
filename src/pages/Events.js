@@ -1,87 +1,85 @@
-// src/pages/Events.js
-import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import "../App.css";
-import headerImage from "../images/standFor.png";
-import img1 from "../images/event-hearts.png";
-import img2 from "../images/event-theme.png";
-import img3 from "../images/event-dti.png";
-import img5 from "../images/event-model.png";
-import img6 from "../images/event-dance.png";
+import React from 'react';
+import Nav from '../components/Navbar.js';
+import Footer from '../components/Footer';
+import "./Events.css";
+
+// Image imports (now using .png)
+import events_1 from "../images/events_1.png";
+import events_2 from "../images/events_2.png";
+import events_3 from "../images/events_3.png";
+import events_4 from "../images/events_4.png";
+import events_5 from "../images/events_5.png";
+import events_6 from "../images/events_6.png";
+import events_7 from "../images/events_7.png";
+import events_H from "../images/events_H.png"; // used as header image
 
 const events = [
   {
-    title: "hearts & crafts",
-    desc: "beyond our charity show case in march, fashion for change also has many events that happen throughout the year.",
-    image: img1,
+    title: "Hearts & Crafts",
+    img: events_1,
+    description: "Hearts & Crafts was our cozy Valentine’s collab with @itshera.co, where students took a break from studying to enjoy pizza, DIY keychains, paper flowers, goodie bags, and heartfelt letters to inspiring women...",
   },
   {
-    title: "theme reveal!",
-    desc: "beyond our charity show case in march, fashion for change also has many events that happen throughout the year.",
-    image: img2,
+    title: "Theme Reveal!",
+    img: events_2,
+    description: "Our Theme Reveal Party is where we unveil the concept that shapes the creative direction of the year, Arcana. Inspired by Alice in Borderland...",
   },
   {
-    title: "dress to impress (DTI)",
-    desc: "beyond our charity show case in march, fashion for change also has many events that happen throughout the year.",
-    image: img3,
+    title: "Dress To Impress (DTI)",
+    img: events_3,
+    description: "Dress to Impress IRL invited students to show off their best fits in a casual, welcoming environment...",
   },
   {
-    title: "holiday market/showcase",
-    desc: "beyond our charity show case in march, fashion for change also has many events that happen throughout the year.",
-    image: "",
+    title: "Holiday Market/Showcase",
+    img: events_4,
+    description: "Our Holiday Market was a festive afternoon full of crafts, games, music, and community spirit...",
   },
   {
-    title: "model workshop",
-    desc: "beyond our charity show case in march, fashion for change also has many events that happen throughout the year.",
-    image: img5,
+    title: "Model Workshop",
+    img: events_5,
+    description: "The Model Workshop gave new and returning models the chance to learn runway basics, build confidence, and prepare for the show...",
   },
   {
-    title: "dance workshop",
-    desc: "beyond our charity show case in march, fashion for change also has many events that happen throughout the year.",
-    image: img6,
+    title: "Dance Workshop",
+    img: events_6,
+    description: "Our Dance Workshop welcomed anyone looking to learn new choreography and connect through movement...",
+  },
+  {
+    title: "Stage Workshop",
+    img: events_7,
+    description: "Focused on production, lighting, and tech, the Stage Workshop introduced attendees to the behind-the-scenes magic that powers our shows...",
   },
 ];
 
 const Events = () => {
   return (
     <div>
-      <Navbar />
-      <div style={{ paddingTop: "10vh" }}>
-        {/* Header */}
-        <div className="header-image-section">
-          <img src={headerImage} alt="events" className="header-image" />
-          <div className="header-overlay">
-            <h1>fc events!</h1>
-          </div>
+      <Nav />
+      <div className="header-image-section">
+        <img src={events_H} alt="events" className="header-image" />
+        <div className="header-overlay">
+          <h1> fc events</h1>
         </div>
-
-        {/* Events Section */}
-        <div className="section-light">
-          <h2>extra events</h2>
-          <p>
-            beyond our charity show case in march, fashion for change also has many events that happen throughout the year.
-          </p>
-
-          <div className="events-list">
-            {events.map((e, i) => (
-              <div className="event-entry" key={i}>
-                <div className="event-img">
-                  {e.image ? <img src={e.image} alt={e.title} /> : <div className="placeholder-box"></div>}
-                </div>
-                <div className="event-info">
-                  <h3>{e.title}</h3>
-                  <p>{e.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p style={{ fontWeight: "bold", fontSize: "1.2rem", marginTop: "2rem" }}>...and more to come</p>
-        </div>
-
-        <Footer />
       </div>
+
+      <div className="events-page">
+        <p className="events-intro">
+          Looking to meet new people, get creative, and be part of something meaningful? Fashion for Change hosts a wide variety of events throughout the year...
+        </p>
+        {events.map((event, index) => (
+          <div className="event-entry" key={index}>
+            <div className="event-img">
+              <img src={event.img} alt={event.title} />
+            </div>
+            <div className="event-info">
+              <h3>{event.title}</h3>
+              <p>{event.description}</p>
+            </div>
+          </div>
+        ))}
+        <p className="events-footer">...and more to come</p>
+      </div>
+      <Footer />
     </div>
   );
 };
