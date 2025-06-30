@@ -20,8 +20,14 @@ import charities from "../images/standFor_H.png";
 import arcana from "../images/Arcana-Header.png";
 import spun from "../images/SpunFromGold-Header.png";
 import soul from "../images/Soul-Header.png";
-import ttd from "../images/ttd-header.png";
 import tuesday from "../images/Tuesday-Header.png";
+import pandoras from "../images/pandoras-header.png";
+import ttd from "../images/ttd-header.png"; 
+import fcmas from "../images/fcmas-header.png";
+import enchanted from "../images/enchanted-header.png";
+import covertocover from "../images/CoverToCover.png";
+import directorscut from "../images/DirectorsCut-Header.png";
+import ffc from "../images/ffc-header.png";
 
 const Home = () => {
   return (
@@ -100,6 +106,27 @@ const Home = () => {
   </a>
   <a href="/past-shows/tuesday" className="carousel-tile">
     <img src={tuesday} alt="Tuesday Show" />
+  </a>
+    <a href="/past-shows/pandoras" className="carousel-tile">
+    <img src={pandoras} alt="Pandora's Box Show" />
+  </a>
+  <a href="/past-shows/ttd" className="carousel-tile">
+    <img src={ttd} alt="Through the Decades Show" />
+  </a>
+    <a href="/past-shows/fcmas" className="carousel-tile">
+    <img src={fcmas} alt="FCMAS Show" />
+  </a>
+  <a href="/past-shows/enchanted" className="carousel-tile">
+    <img src={enchanted} alt="Enchanted Show" />
+  </a>
+    <a href="/past-shows/cover-to-cover" className="carousel-tile">
+    <img src={covertocover} alt="Cover to Cover Show" />
+  </a>
+  <a href="/past-shows/directors-cut" className="carousel-tile">
+    <img src={directorscut} alt="Director's Cut Show" />
+  </a>
+    <a href="/past-shows/ffc" className="carousel-tile">
+    <img src={ffc} alt="FFC Show" />
   </a>
 </div>
 
