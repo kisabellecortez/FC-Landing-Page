@@ -1097,3 +1097,100 @@ p {
   border-radius: 8px;
   display: block;
 }
+.home-container {
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.ffc-logo {
+  width: 80%;
+  max-width: 280px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.nav-section {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.nav-tile {
+  position: relative;
+  width: 30%;
+  min-width: 90px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  flex-grow: 1;
+}
+
+.nav-tile.wide {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  margin-bottom: 1rem;
+}
+
+.nav-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.nav-tile span {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.section-title {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-align: left;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-tile {
+  flex: 0 0 auto;
+  width: 130px;
+  height: 80px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.carousel-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}

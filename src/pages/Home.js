@@ -1,107 +1,111 @@
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-import '../App.css';
+import React from "react";
+import { Link } from "react-router-dom";
+
+import logo from "../images/logo-white.png";
+import about from "../images/about-group.png";
+import events from "../images/events_H.png";
+import sponsorships from "../images/spons_H.png";
 import Nav from '../components/Navbar.js'
 
-const Home = () => (
-  <div>
-    <Hero />
-    <Nav />
+import team1 from "../images/team-bod.png";
+import team2 from "../images/team-artistic.png";
+import team3 from "../images/team-events.png";
+import PRH from "../images/PR-H.png";
+import MODH from "../images/MOD-H.png";
+import SPOH from "../images/SPO-H.png";
+import STAH from "../images/STA-H.png";
 
-    <div className="grid-two">
-      <div>
-        <h2>about us</h2>
-        <div className="card bordered-card">
-          <img src="your_about_us_image.jpg" alt="About us" className="home-img" />
-        </div>
+import charities from "../images/standFor_H.png";
+
+import arcana from "../images/Arcana-Header.png";
+import spun from "../images/SpunFromGold-Header.png";
+import soul from "../images/Soul-Header.png";
+import ttd from "../images/ttd-header.png";
+import tuesday from "../images/Tuesday-Header.png";
+
+const Home = () => {
+  return (
+    <div>
+                <Nav />
+    
+    <div className="home-container">
+      
+      <img src={logo} alt="Fashion For Change Logo" className="ffc-logo" />
+
+      <div className="nav-section">
+        <a href="/about-us" className="nav-tile">
+          <img src={about} alt="About Us" />
+          <span>about us</span>
+        </a>
+
+        <a href="/events" className="nav-tile">
+          <img src={events} alt="Events" />
+          <span>events</span>
+        </a>
       </div>
-      <div>
-        <h2>events</h2>
-        <div className="card bordered-card">
-          <img src="your_events_image.jpg" alt="Events" className="home-img" />
-        </div>
-      </div>
+
+      <a href="/sponsorship" className="nav-tile wide">
+        <img src={sponsorships} alt="Sponsorships" />
+        <span>sponsorships</span>
+      </a>
+
+<h3 className="section-title">teams</h3>
+<div className="carousel">
+  <a href="/teams/bod" className="carousel-tile">
+    <img src={team1} alt="BOD Team" />
+    <span>bod</span>
+  </a>
+  <a href="/teams/artistic" className="carousel-tile">
+    <img src={team2} alt="Artistic Team" />
+    <span>artistic</span>
+  </a>
+  <a href="/teams/events" className="carousel-tile">
+    <img src={team3} alt="Events Team" />
+    <span>events</span>
+  </a>
+  <a href="/teams/pr" className="carousel-tile">
+    <img src={PRH} alt="PR Team" />
+    <span>pr</span>
+  </a>
+  <a href="/teams/model" className="carousel-tile">
+    <img src={MODH} alt="MOD Team" />
+    <span>mod</span>
+  </a>
+  <a href="/teams/sponsorship" className="carousel-tile">
+    <img src={SPOH} alt="SPO Team" />
+    <span>spo</span>
+  </a>
+  <a href="/teams/stage" className="carousel-tile">
+    <img src={STAH} alt="STA Team" />
+    <span>sta</span>
+  </a>
+</div>
+
+
+      <a href="/stand-for" className="nav-tile wide">
+        <img src={charities} alt="Charities" />
+        <span>charities</span>
+      </a>
+
+<h3 className="section-title">past shows</h3>
+<div className="carousel">
+  <a href="past-shows/arcana" className="carousel-tile">
+    <img src={arcana} alt="Arcana Show" />
+  </a>
+  <a href="/past-shows/spun-from-gold" className="carousel-tile">
+    <img src={spun} alt="Spun From Gold Show" />
+  </a>
+  <a href="/past-shows/soul" className="carousel-tile">
+    <img src={soul} alt="Soul Show" />
+  </a>
+  <a href="/past-shows/tuesday" className="carousel-tile">
+    <img src={tuesday} alt="Tuesday Show" />
+  </a>
+</div>
+
     </div>
-
-
-
-    {/* Sponsorship full width */}
-    <div className="full-width">
-      <h2>sponsorships</h2>
-      <div className="card bordered-card"></div>
     </div>
-
-    <div className="full-width">
-      <h2>Teams</h2>
-      {/* Teams section (scrollable cards) */}
-      <div className="horizontal-scroll-wrapper">
-        <div className="horizontal-scroll" id="teams-scroll">
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-          <div className="team-card" />
-
-        </div>
-        <button
-          className="scroll-arrow"
-          onClick={() => {
-            const scrollContainer = document.getElementById("teams-scroll");
-            scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
-          }}
-        >
-          ❯
-        </button>
-      </div>
-    </div>
-
-
-
-    {/* What We Stand For full width */}
-    <div className="full-width">
-      <h2>what we stand for</h2>
-      <div className="card bordered-card"></div>
-    </div>
-    {/* Past Shows: grid of 3 */}
-    <div className="full-width">
-      <h2>past shows</h2>
-      <div className="horizontal-scroll-wrapper">
-        <div className="horizontal-scroll" id="past-shows-scroll">
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-          <div className="show-card" />
-        </div>
-        <button
-          className="scroll-arrow"
-          onClick={() => {
-            const scrollContainer = document.getElementById("past-shows-scroll");
-            scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
-          }}
-        >
-          ❯
-        </button>
-      </div>
-    </div>
-    <Footer />
-  </div>
-);
+  );
+};
 
 export default Home;
