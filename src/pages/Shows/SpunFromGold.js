@@ -18,9 +18,7 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>Spun From Gold <span className="arcana-year">(2023 - 2024)</span></h1>
                     <p className="arcana-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
+Spun From Gold was our invitation to step into a world where fashion meets fairytale. Celebrating FC’s 14th year, this show wove six classic stories, Hercules, Mulan, Peter Pan, The Snow Queen, Beauty and the Beast, Alice in Wonderland, into couture designs, music, and dance. Every scene explored themes of courage, transformation, magic and hope, brought to life by the artistry of our student designers and choreographers. All proceeds supported the KW Humane Society, helping care for vulnerable animals in our community. Thank you for joining us on this magical journey and for helping us make real change possible.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">

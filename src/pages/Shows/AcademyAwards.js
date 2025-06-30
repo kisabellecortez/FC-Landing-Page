@@ -18,9 +18,8 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>The Academy Awards <span className="arcana-year">(2021 - 2022)</span></h1>
                     <p className="arcana-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
+FC Presents: The Academy Awards was our tribute to the power of film to move us, inspire us, and bring us together. Each scene reimagined an Oscar-winning or -nominated movie, La La Land, The Great Gatsby, Spirited Away, The Shape of Water, The Matrix, Black Panther, and more, through fashion, music, and dance.
+This show was a testament to our community’s creativity and flexibility, especially as campus reopened after COVID closures. Every look, every rehearsal, every late-night brainstorm was about building something special together, and supporting the Food Bank of Waterloo Region so that no one in our local community goes hungry.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">
