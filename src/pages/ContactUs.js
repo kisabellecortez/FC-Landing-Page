@@ -40,7 +40,7 @@ const Contact = () => {
 
           <form
             className="contact-form"
-            action="https://formspree.io/f/your-form-id" // Replace with your actual Formspree endpoint
+            action="https://formspree.io/f/meoknegb" // Replace with your actual Formspree endpoint
             method="POST"
           >
             <div className="form-row">
