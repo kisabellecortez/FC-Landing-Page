@@ -1,11 +1,20 @@
 // src/pages/Contact.js
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./ContactUs.css";
 import { FaEnvelope, FaInstagram, FaFacebook, FaYoutube, FaDiscord } from "react-icons/fa";
 
 const Contact = () => {
+  useEffect(() => {
+    // Wait for FB to be available before calling parse
+    const interval = setInterval(() => {
+      if (window.FB) {
+        window.FB.XFBML.parse();
+        clearInterval(interval);
+      }
+    }, 500);
+  }, []);
   return (
     <div>
       <Navbar />
@@ -62,7 +71,7 @@ const Contact = () => {
     className="fb-page"
     data-href="https://www.facebook.com/fashionforchange"
     data-tabs="timeline"
-    data-width="500"
+  data-width="1000"
     data-height="700"
     data-small-header="false"
     data-adapt-container-width="true"

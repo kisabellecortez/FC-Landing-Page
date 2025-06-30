@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Load Facebook SDK
+(function (d, s, id) {
+  const fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  const js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "facebook-jssdk");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
