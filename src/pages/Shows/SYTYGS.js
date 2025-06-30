@@ -1,6 +1,6 @@
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer.js";
-import header from "../../images/ttd-header.png";
+import header from "../../images/standFor.png";
 
 const ArcanaPage = () => {
     const imageCount = 15;
