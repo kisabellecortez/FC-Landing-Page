@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 import logo from "../images/logo-white.png";
 import about from "../images/about-group.png";
@@ -131,6 +132,8 @@ const Home = () => {
 </div>
 
     </div>
+            <Footer />
+
     </div>
   );
 };
