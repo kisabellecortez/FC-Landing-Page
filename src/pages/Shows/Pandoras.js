@@ -18,9 +18,7 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>Pandoras Box <span className="arcana-year">(2017 - 2018)</span></h1>
                     <p className="arcana-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
+Pandora’s Box is a dramatic, mythologically inspired production that brings to life the story of Pandora and the evils unleashed upon the world. Each segment of the show personifies a different force released from the box, Pride, Greed, Pain, Discrimination, Mediocrity, Addiction, Chaos, Deception, Lust, Destruction, Vulnerability, and finally, Hope. With stunning choreography, striking fashion designs, and immersive storytelling, Pandora’s Box confronts universal human struggles while reminding us of our collective capacity for hope and change. Proceeds support sustainable education in Moyamba, Sierra Leone.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">

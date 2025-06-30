@@ -18,9 +18,7 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>Through the Decades<span className="arcana-year">(2016 - 2017)</span></h1>
                     <p className="arcana-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
+Travel through time with Through the Decades, Fashion for Change’s 2017 show that pays homage to the defining styles of the 1950s through the 1990s. Each scene is a time capsule, featuring meticulously curated fashion and choreography inspired by iconic eras, from the rock-and-roll rebellion of the '50s, the free-spirited '60s, disco-infused '70s, neon-powered '80s, to the grunge and minimalism of the '90s. A dynamic blend of nostalgia and contemporary flair, this show celebrates the evolution of culture and fashion while supporting education in Moyamba, Sierra Leone.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">

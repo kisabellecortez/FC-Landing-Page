@@ -18,9 +18,7 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>Tuesday <span className="arcana-year">(2018 - 2019)</span></h1>
                     <p className="arcana-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
+Tuesday was our invitation to notice the extraordinary in the everyday. Set against real cities like New York, Toronto, Hong Kong, and Rio, each chapter told a story tucked inside an ordinary day—the bustle, the quiet moments, the shared humanity. We wanted to remind ourselves that even the simplest days are worth celebrating. Thank you for joining us on this journey, and for supporting our continued commitment to education and growth in Moyamba, Sierra Leone.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">
