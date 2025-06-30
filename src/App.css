@@ -1110,8 +1110,9 @@ p {
   width: 80%;
   max-width: 280px;
   display: block;
-  margin: 0 auto 1.5rem;
+  margin: 12vh auto 1.5rem auto; /* 👈 Pushes it below fixed navbar */
 }
+
 
 .nav-section {
   display: flex;
