@@ -1098,6 +1098,12 @@ p {
   display: block;
 }
 .home-container {
+    background-image: url('./images/home-bg.png'); /* adjust path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional */
+  min-height: 100vh;
   padding: 1rem;
   background-color: #000;
   color: white;
