@@ -1,10 +1,10 @@
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
-import header from "../../images/DirectorsCut-Header.png";
+import header from "../../images/enchanted-header.png";
 
 const ArcanaPage = () => {
     const imageCount = 15;
-    const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/DirectorsCut/${i + 1}.png`);
+    const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/enchanted/${i + 1}.png`);
 
     return (
         <div>
@@ -16,7 +16,7 @@ const ArcanaPage = () => {
             </div>
             <div className="arcana-container">
                 <div className="arcana-header">
-                    <h1>Director's Cut <span className="arcana-year">(2012 - 2013)</span></h1>
+                    <h1>Enchanted <span className="arcana-year">(2014 - 2015)</span></h1>
                     <p className="arcana-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
