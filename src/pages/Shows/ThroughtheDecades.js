@@ -21,17 +21,6 @@ const ArcanaPage = () => {
 Travel through time with Through the Decades, Fashion for Change’s 2017 show that pays homage to the defining styles of the 1950s through the 1990s. Each scene is a time capsule, featuring meticulously curated fashion and choreography inspired by iconic eras, from the rock-and-roll rebellion of the '50s, the free-spirited '60s, disco-infused '70s, neon-powered '80s, to the grunge and minimalism of the '90s. A dynamic blend of nostalgia and contemporary flair, this show celebrates the evolution of culture and fashion while supporting education in Moyamba, Sierra Leone.
                     </p>
                 </div>
-                <div className="arcana-video-wrapper">
-                    <iframe
-                        width="100%"
-                        height="400"
-                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
-                </div>
 
 
                 <div className="gallery-container">

@@ -15,23 +15,6 @@ const ArcanaPage = () => {
                 </div>
             </div>
             <div className="arcana-container">
-                <div className="arcana-header">
-                    <h1>FCMAS <span className="arcana-year">(2015 - 2016)</span></h1>
-                    <p className="arcana-description">
-Step onto the red carpet for FCMAs, where fashion and music collide in an unforgettable spectacle. Inspired by the glamour and energy of the world's biggest award shows, this production showcases bold styles, confident choreography, and the artistry of student designers and models who transform the stage into a living tribute to the music industry. From edgy rockstar looks to classic elegance worthy of a Grammy night, this show celebrates the spirit of performance and self-expression while raising funds for global education initiatives.
-                    </p>
-                </div>
-                <div className="arcana-video-wrapper">
-                    <iframe
-                        width="100%"
-                        height="400"
-                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
-                </div>
 
 
                 <div className="gallery-container">
