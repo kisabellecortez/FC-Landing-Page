@@ -114,7 +114,7 @@ function App() {
             path="/teams"
             element={<Team />}
           />
-                    <Route
+          <Route
             path="/contact-us"
             element={<ContactUs />}
           />

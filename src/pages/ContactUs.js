@@ -2,8 +2,8 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "./ContactUs.css";
-import { FaEnvelope, FaInstagram, FaFacebook, FaYoutube, FaDiscord } from "react-icons/fa";
+import "./ContactUs.css" 
+import { FaEnvelope, FaInstagram, FaFacebook, FaYoutube, FaDiscord } from 'react-icons/fa';
 
 const Contact = () => {
   useEffect(() => {

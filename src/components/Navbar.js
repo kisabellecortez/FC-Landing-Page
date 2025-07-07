@@ -26,6 +26,15 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="dropdown">
+                    <a href='/events'>get involved</a>
+
+                    <div className="dropdown-content">
+                        <a href='/events'>events</a>
+                        <a href='/sponsorship'>sponsorship</a>
+                        <a href='/stand-for'>charities</a>
+                    </div>
+                </div>
+                <div className="dropdown">
                     <a href='/past-shows/arcana'>shows</a>
 
                     <div className="dropdown-content">
@@ -44,9 +53,7 @@ export default function Navbar() {
                         <a href="/past-shows/ffc">Fashion For Change</a>
                     </div>
                 </div>
-                <a href='/events'>events</a>
-                <a href='/sponsorship'>sponsorship</a>
-                <a href='/stand-for'>charities</a>
+                <a href="/contact-us">contact us</a>
 
             </div>
         </div>
