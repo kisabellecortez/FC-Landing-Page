@@ -2,7 +2,6 @@ import Nav from '../components/Navbar.js'
 import Footer from '../components/Footer.js';
 
 import BOD1 from '../images/BOD-1.png'
-import BOD2 from '../images/BOD-2.png'
 import BODart from '../images/BOD-art.png'
 import BODeve from '../images/BOD-eve.png'
 import BODfin from '../images/BOD-fin.png'
