@@ -1,11 +1,21 @@
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
 import header from "../../images/Tuesday-Header.png";
+import { useState } from "react";
 
 const ArcanaPage = () => {
     const imageCount = 15;
     const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/Tuesday/${i + 1}.png`);
 
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageClick = (url) => {
+        setSelectedImage(url);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+    };
     return (
         <div>
             <Nav />
@@ -18,7 +28,7 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>Tuesday <span className="arcana-year">(2018 - 2019)</span></h1>
                     <p className="arcana-description">
-Tuesday was our invitation to notice the extraordinary in the everyday. Set against real cities like New York, Toronto, Hong Kong, and Rio, each chapter told a story tucked inside an ordinary day—the bustle, the quiet moments, the shared humanity. We wanted to remind ourselves that even the simplest days are worth celebrating. Thank you for joining us on this journey, and for supporting our continued commitment to education and growth in Moyamba, Sierra Leone.
+                        Tuesday was our invitation to notice the extraordinary in the everyday. Set against real cities like New York, Toronto, Hong Kong, and Rio, each chapter told a story tucked inside an ordinary day—the bustle, the quiet moments, the shared humanity. We wanted to remind ourselves that even the simplest days are worth celebrating. Thank you for joining us on this journey, and for supporting our continued commitment to education and growth in Moyamba, Sierra Leone.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">
@@ -37,12 +47,21 @@ Tuesday was our invitation to notice the extraordinary in the everyday. Set agai
                 <div className="gallery-container">
                     <div className="gallery-grid">
                         {imageUrls.map((url, i) => (
-                            <img key={i} src={url} alt={`past show ${i + 1}`} className="gallery-img" />
+                            <img key={i} src={url} alt={`past show ${i + 1}`} className="gallery-img" onClick={() => handleImageClick(url)}
+                                style={{ cursor: "pointer" }} />
                         ))}
                     </div>
                 </div>
 
             </div>
+            {selectedImage && (
+                <div className="modal-overlay" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <img src={selectedImage} alt="Full view" className="modal-image" />
+                        <button className="close-button" onClick={closeModal}>×</button>
+                    </div>
+                </div>
+            )}
             <Footer />
         </div>
     );

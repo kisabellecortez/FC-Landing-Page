@@ -425,6 +425,26 @@ p {
   height: 100%; 
 }
 
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem 2.5rem;
+  /* 3rem vertical, 2.5rem horizontal */
+  padding: 0 2rem 2rem;
+  /* left/right padding */
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collage img {
+  width: 100%;
+  height: 240px;
+  /* smaller height */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .extra-collage{
   display: flex; 
   flex-direction: row; 
@@ -472,7 +492,8 @@ p {
 .box .inner-2 img {
   height: 400px;           /* ✅ Match screenshot */
   width: auto;
-  object-fit: contain;     /* Shrink to fit, not crop */
+  object-fit: contain;
+  /* Shrink to fit, not crop */
   border-radius: 10px;
   display: block;
   max-width: 100%;
@@ -510,19 +531,6 @@ p {
   border-radius: 10px;
 }
 
-/* Header section */
-.header-image-section {
-  position: relative;
-  width: 100%;
-  height: 35vh;
-}
-
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .header-overlay {
   position: absolute;
   bottom: 0rem;
@@ -535,10 +543,9 @@ p {
   background: none;
   /* removes the dark background */
   padding: 0;
-  /* removes padding */
-  border-radius: 0;
-  /* removes corner rounding */
 }
+
+
 
 
 
@@ -549,14 +556,17 @@ p {
   padding: 3rem 5vw;
   max-width: 100%;
 }
+
 .section-light h2,
 .section-light p,
 .section-light .event-info h3,
 .section-light .event-info p {
   color: white !important;
 }
+
 .event-entry {
-  border-bottom: 1px solid #444; /* better contrast than #eee on black */
+  border-bottom: 1px solid #444;
+  /* better contrast than #eee on black */
 }
 
 
@@ -658,7 +668,8 @@ p {
 .about-section {
   background-color: black;
   color: white;
-  padding: 2rem 2rem 1rem 2rem; /* top, right, bottom, left */
+  padding: 2rem 2rem 1rem 2rem;
+  /* top, right, bottom, left */
   width: 100%;
   box-sizing: border-box;
 }
@@ -797,7 +808,8 @@ p {
   font-size: 16px;
   font-weight: bold;
   text-transform: lowercase;
-  background: rgba(0, 0, 0, 0.4); /* subtle dark overlay for contrast */
+  background: rgba(0, 0, 0, 0.4);
+  /* subtle dark overlay for contrast */
   padding: 4px 0;
 }
 
@@ -981,6 +993,13 @@ p {
   font-family: 'Futura', 'Trebuchet MS', 'Helvetica Neue', sans-serif;
 } */
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* Headings */
 .section-light h2,
 .teams-section h2 {
@@ -1007,34 +1026,47 @@ p {
 .arcana-header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  text-align: left;
+  padding: 0 1.5rem;
+
+
 }
 
 .arcana-year {
   font-weight: normal;
   font-size: 1.2rem;
+  text-align: left;
+
 }
 
 .arcana-description {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  text-align: left;
+
 }
 
 .arcana-container {
-  padding: 5vh 2rem 5rem;
-  max-width: 900px;
+  width: 100vw;
+  padding: 0 1.5rem 2rem 0rem !important;
+  /* ✅ 2rem on left/right/bottom */
   margin: 0 auto;
-  background-color: white;
-  color: black; /* fixes summary text */
+  box-sizing: border-box;
+  max-width: none !important;
 }
 
+
 .arcana-video-placeholder {
-  background-color: white; /* make it white */
+  background-color: white;
+  /* make it white */
   border: 1px solid #ccc;
   padding: 3rem 2rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #555; /* darken for readability */
+  color: #555;
+  /* darken for readability */
   margin-bottom: 3rem;
   border-radius: 8px;
   font-style: italic;
@@ -1043,7 +1075,8 @@ p {
 
 .arcana-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* force 3 per row */
+  grid-template-columns: repeat(3, 1fr);
+  /* force 3 per row */
   gap: 1.5rem;
   justify-items: center;
 }
@@ -1067,17 +1100,40 @@ p {
   background-color: white;
 }
 
-.gallery-container {
+.arcana-video-wrapper {
+  width: 640px;
+  height: 360px;
+  margin: 0 auto 2rem auto;
+  /* centers the video and adds spacing below */
+}
+
+.arcana-video-wrapper iframe {
   width: 100%;
-  padding: 0 2rem;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+.gallery-container {
+  width: 100vw;
+  /* full viewport width */
+  padding: 0;
+  /* remove side padding */
+  margin: 0 auto;
   box-sizing: border-box;
 }
+
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 even columns */
-  gap: 24px; /* or whatever spacing you want */
-  padding: 0 24px; /* horizontal padding to prevent images touching screen edge */
-  max-width: 100vw; /* prevent overflow */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 even columns */
+  gap: 24px;
+  /* or whatever spacing you want */
+  padding: 0 24px;
+  /* horizontal padding to prevent images touching screen edge */
+  max-width: 100vw;
+  /* prevent overflow */
   box-sizing: border-box;
 }
 
@@ -1089,12 +1145,15 @@ p {
   border-radius: 8px;
   display: block;
 }
+
 .home-container {
-    background-image: url('./images/home-bg.png'); /* adjust path */
+  background-image: url('./images/home-bg.png');
+  /* adjust path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* optional */
+  background-attachment: fixed;
+  /* optional */
   min-height: 100vh;
   padding: 1rem;
   background-color: #000;
@@ -1108,7 +1167,8 @@ p {
   width: 80%;
   max-width: 280px;
   display: block;
-  margin: 12vh auto 1.5rem auto; /* 👈 Pushes it below fixed navbar */
+  margin: 12vh auto 1.5rem auto;
+  /* 👈 Pushes it below fixed navbar */
 }
 
 
@@ -1192,4 +1252,61 @@ p {
   object-fit: cover;
   display: block;
   border-radius: inherit;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-image-section {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

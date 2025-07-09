@@ -1,7 +1,7 @@
 .contact-container {
   padding: 6rem 2rem;
   font-family: 'Futura', sans-serif;
-  background: white;
+  background: linear-gradient(to bottom, #ffffff, #e5d4ff, #cfe6ff);
   color: black;
   text-align: center;
 }

@@ -47,6 +47,8 @@ const About = () => {
 
       <div className="intro-section">
         <img src={groupImage} alt="Fashion for Change Group" className="intro-img" />
+          <div className="intro-text">
+
         <p>
           Fashion for Change is more than just a "fashion club". We are a non-profit organization that unites
           students at the University of Waterloo and Wilfrid Laurier University to host the largest student-run
@@ -64,6 +66,7 @@ const About = () => {
         community. From the first concept to the final spotlight, Fashion for Change is a celebration of identity,
         innovation, and collective purpose.
         </p>
+        </div>
       </div>
 
       <h2>our teams</h2>
