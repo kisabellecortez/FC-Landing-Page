@@ -1,19 +1,19 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import ART_H from '../images/ART-H.png'
-import ARTC1 from '../images/ART-C1.png'
-import ARTC2 from '../images/ART-C2.png'
-import ARTC3 from '../images/ART-C3.png'
-import ARTC4 from '../images/ART-C4.png'
-import ARTC5 from '../images/ART-C5.png'
-import ARTC6 from '../images/ART-C6.png'
-import ARTC7 from '../images/ART-C7.png'
-import ARTC8 from '../images/ART-C8.png'
+import ART_H from '../../images/ART-H.png'
+import ARTC1 from '../../images/ART-C1.png'
+import ARTC2 from '../../images/ART-C2.png'
+import ARTC3 from '../../images/ART-C3.png'
+import ARTC4 from '../../images/ART-C4.png'
+import ARTC5 from '../../images/ART-C5.png'
+import ARTC6 from '../../images/ART-C6.png'
+import ARTC7 from '../../images/ART-C7.png'
+import ARTC8 from '../../images/ART-C8.png'
 
-const TeamsArtistic = () => {
+const Artistic = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -78,5 +78,5 @@ const TeamsArtistic = () => {
     )
   };
   
-  export default TeamsArtistic;
+  export default Artistic;
   

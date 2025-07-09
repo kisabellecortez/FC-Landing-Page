@@ -1,9 +1,7 @@
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import MODH from '../images/MOD-H.png'
-
-const TeamsFinance = () => {
+const Finance = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -58,5 +56,5 @@ const TeamsFinance = () => {
     )
   };
   
-  export default TeamsFinance;
+  export default Finance;
   

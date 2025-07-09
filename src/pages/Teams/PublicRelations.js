@@ -1,19 +1,19 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import H from '../images/PR-H.png'
-import C1 from '../images/PR-C1.png'
-import C2 from '../images/PR-C2.png'
-import C3 from '../images/PR-C3.png'
-import C4 from '../images/PR-C4.png'
-import C5 from '../images/PR-C5.png'
-import C6 from '../images/PR-C6.png'
-import C7 from '../images/PR-C7.png'
-import C8 from '../images/PR-C8.png'
+import H from '../../images/PR-H.png'
+import C1 from '../../images/PR-C1.png'
+import C2 from '../../images/PR-C2.png'
+import C3 from '../../images/PR-C3.png'
+import C4 from '../../images/PR-C4.png'
+import C5 from '../../images/PR-C5.png'
+import C6 from '../../images/PR-C6.png'
+import C7 from '../../images/PR-C7.png'
+import C8 from '../../images/PR-C8.png'
 
-const Teams = () => {
+const PublicRelations = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -75,5 +75,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default PublicRelations;
   

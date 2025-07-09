@@ -1,19 +1,19 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import EVEH from '../images/EVE-H.png'
-import EVEC1 from '../images/EVE-C1.png'
-import EVEC2 from '../images/EVE-C2.png'
-import EVEC3 from '../images/EVE-C3.png'
-import EVEC4 from '../images/EVE-C4.png'
-import EVEC5 from '../images/EVE-C5.png'
-import EVEC6 from '../images/EVE-C6.png'
-import EVEC7 from '../images/EVE-C7.png'
-import EVEC8 from '../images/EVE-C8.png'
+import EVEH from '../../images/EVE-H.png'
+import EVEC1 from '../../images/EVE-C1.png'
+import EVEC2 from '../../images/EVE-C2.png'
+import EVEC3 from '../../images/EVE-C3.png'
+import EVEC4 from '../../images/EVE-C4.png'
+import EVEC5 from '../../images/EVE-C5.png'
+import EVEC6 from '../../images/EVE-C6.png'
+import EVEC7 from '../../images/EVE-C7.png'
+import EVEC8 from '../../images/EVE-C8.png'
 
-const TeamsEvents = () => {
+const Events = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -70,5 +70,5 @@ const TeamsEvents = () => {
     )
   };
   
-  export default TeamsEvents;
+  export default Events;
   

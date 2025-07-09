@@ -1,19 +1,19 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import H from '../images/MOD-H.png'
-import C1 from '../images/MOD-C1.png'
-import C2 from '../images/MOD-C2.png'
-import C3 from '../images/MOD-C3.png'
-import C4 from '../images/MOD-C4.png'
-import C5 from '../images/MOD-C5.png'
-import C6 from '../images/MOD-C6.png'
-import C7 from '../images/MOD-C7.png'
-import C8 from '../images/MOD-C8.png'
+import H from '../../images/MOD-H.png'
+import C1 from '../../images/MOD-C1.png'
+import C2 from '../../images/MOD-C2.png'
+import C3 from '../../images/MOD-C3.png'
+import C4 from '../../images/MOD-C4.png'
+import C5 from '../../images/MOD-C5.png'
+import C6 from '../../images/MOD-C6.png'
+import C7 from '../../images/MOD-C7.png'
+import C8 from '../../images/MOD-C8.png'
 
-const TeamsModel = () => {
+const Model = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -70,5 +70,5 @@ const TeamsModel = () => {
     )
   };
   
-  export default TeamsModel;
+  export default Model;
   

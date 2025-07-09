@@ -11,6 +11,7 @@ export default function Navbar() {
 
             <div className="pages">
                 <a href='/about-us'>about us</a>
+                <a href='/magazine'>magazine</a>
                 <div className="dropdown">
                     <a href='/teams/bod'>teams</a>
 

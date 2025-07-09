@@ -3,16 +3,16 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./Sponsorship.css";
-import spons_H from "../images/spons_H.png";
+import spons_H from "../images/Sponsorships-Header.png";
 import { Link } from "react-router-dom";
 
 const Sponsorship = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ paddingTop: "10vh" }}>
+      <div>
         {/* Header */}
-        <div className="header-image-section">
+        <div className="show-header">
           <img src={spons_H} alt="sponsorships" className="header-image" />
           <div className="header-overlay">
             <h1>sponsorships</h1>

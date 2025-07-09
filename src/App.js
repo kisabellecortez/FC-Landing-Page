@@ -3,33 +3,39 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AboutUs from './pages/About.js'
 import Events from './pages/Events.js'
 import Shows from './pages/Shows.js'
-import Sponsorship from './pages/Sponsorship.js'
-import TeamsSponsorship from './pages/TeamsSponsorship.js'
-import TeamsBOD from './pages/TeamsBOD.js'
-import TeamsArtistic from './pages/TeamsArtistic.js'
-import TeamsEvents from './pages/TeamsEvents.js'
-import TeamsStage from './pages/TeamsStage.js'
-import TeamsFinance from './pages/TeamsFinance.js'
-import TeamsModel from './pages/TeamsModel.js'
-import TeamsPR from './pages/TeamsPR.js'
-import TeamsMarketing from './pages/TeamsMarketing.js'
+import Sponsorship from './pages/Sponsorships.js'
+
+// Teams pages
+import TeamSponsorship from './pages/Teams/Sponsorship.js'
+import TeamsBOD from './pages/Teams/BoardOfDirectors.js'
+import TeamsArtistic from './pages/Teams/Artistic.js'
+import TeamsEvents from './pages/Teams/Events.js'
+import TeamsStage from './pages/Teams/Stage.js'
+import TeamsFinance from './pages/Teams/Finance.js'
+import TeamsModel from './pages/Teams/Model.js'
+import TeamsPR from './pages/Teams/PublicRelations.js'
+import TeamsMarketing from './pages/Teams/Marketing.js'
+
 import Home from './pages/Home.js'
 import StandFor from './pages/StandFor.js'
 import ContactUs from './pages/ContactUs.js'
+
+// Shows pages
 import ShowsFFC from './pages/Shows/FFC.js'
 import ShowsEnchanted from './pages/Shows/Enchanted.js'
 import ShowsFCMAS from './pages/Shows/FCMAS.js'
 import ShowsPandoras from './pages/Shows/Pandoras.js'
 import ShowsTTD from './pages/Shows/ThroughtheDecades.js'
 import ShowsSYTYGS from './pages/Shows/SYTYGS.js'
+import ShowsAcademyAwards from './pages/Shows/AcademyAwards.js'
+import ShowsArcana from './pages/Shows/Arcana.js'
+import ShowsCoverToCover from './pages/Shows/CoverToCover.js'
+import ShowsDirectorsCut from './pages/Shows/DirectorsCut.js'
+import ShowsSpunFromGold from './pages/Shows/SpunFromGold.js'
+import ShowsSoul from './pages/Shows/Soul.js'
+import ShowsTuesday from './pages/Shows/Tuesday.js'
 
-import AcademyAwards from './pages/Shows/AcademyAwards.js'
-import Arcana from './pages/Shows/Arcana.js'
-import CoverToCover from './pages/Shows/CoverToCover.js'
-import DirectorsCut from './pages/Shows/DirectorsCut.js'
-import SpunFromGold from './pages/Shows/SpunFromGold.js'
-import Soul from './pages/Shows/Soul.js'
-import Tuesday from './pages/Shows/Tuesday.js'
+import Magazine from './pages/magazine.js'
 
 function App() {
   return (
@@ -47,31 +53,31 @@ function App() {
           />
           <Route
             path="/past-shows/academy-awards"
-            element={<AcademyAwards/>}
+            element={<ShowsAcademyAwards/>}
           />
           <Route
             path="/past-shows/arcana"
-            element={<Arcana/>}
+            element={<ShowsArcana/>}
           />
           <Route
             path="/past-shows/cover-to-cover"
-            element={<CoverToCover/>}
+            element={<ShowsCoverToCover/>}
           />
           <Route
             path="/past-shows/directors-cut"
-            element={<DirectorsCut/>}
+            element={<ShowsDirectorsCut/>}
           />
           <Route
             path="/past-shows/soul"
-            element={<Soul/>}
+            element={<ShowsSoul/>}
           />
           <Route
             path="/past-shows/spun-from-gold"
-            element={<SpunFromGold/>}
+            element={<ShowsSpunFromGold/>}
           />
           <Route
             path="/past-shows/tuesday"
-            element={<Tuesday/>}
+            element={<ShowsTuesday/>}
           />
           <Route
             path="/past-shows/ffc"
@@ -140,7 +146,7 @@ function App() {
           />
           <Route
             path="/teams/sponsorship"
-            element={<TeamsSponsorship />}
+            element={<TeamSponsorship />}
           />
           <Route
             path="/teams/model"
@@ -153,6 +159,11 @@ function App() {
           <Route
             path="/shows"
             element={<Shows />}
+          />
+
+          <Route
+            path="/magazine"
+            element={<Magazine />}
           />
         </Routes>
       </BrowserRouter>

@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./About.css";
 import Typewriter from 'typewriter-effect';
-import headerImage from "../images/about-header.png";
+import headerImage from "../images/AboutUs-Header.png";
 import groupImage from "../images/about-group.png";
 import team1 from "../images/team-bod.png";
 import team2 from "../images/team-artistic.png";
@@ -19,9 +19,9 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ paddingTop: "10vh" }}>
+      <div>
         {/* Header Section */}
-        <div className="header-image-section">
+        <div className="show-header">
           <img src={headerImage} alt="about us" className="header-image" />
           <div className="header-overlay">
             <h1>about us</h1>

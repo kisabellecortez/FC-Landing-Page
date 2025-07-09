@@ -1,20 +1,20 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import STAH from '../images/STA-H.png'
-import STAC1 from '../images/STA-C1.png'
-import STAC2 from '../images/STA-C2.png'
-import STAC3 from '../images/STA-C3.png'
-import STAC4 from '../images/STA-C4.png'
-import STAC5 from '../images/STA-C5.png'
-import STAC6 from '../images/STA-C6.png'
-import STAC7 from '../images/STA-C7.png'
-import STAC8 from '../images/STA-C8.png'
-import STAC9 from '../images/STA-C9.png'
+import STAH from '../../images/STA-H.png'
+import STAC1 from '../../images/STA-C1.png'
+import STAC2 from '../../images/STA-C2.png'
+import STAC3 from '../../images/STA-C3.png'
+import STAC4 from '../../images/STA-C4.png'
+import STAC5 from '../../images/STA-C5.png'
+import STAC6 from '../../images/STA-C6.png'
+import STAC7 from '../../images/STA-C7.png'
+import STAC8 from '../../images/STA-C8.png'
+import STAC9 from '../../images/STA-C9.png'
 
-const Teams = () => {
+const Stage = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -102,5 +102,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default Stage;
   

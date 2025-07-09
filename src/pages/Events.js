@@ -55,7 +55,7 @@ const Events = () => {
   return (
     <div>
       <Nav />
-      <div className="header-image-section">
+      <div className="show-header">
         <img src={events_H} alt="events" className="header-image" />
         <div className="header-overlay">
           <h1> fc events</h1>

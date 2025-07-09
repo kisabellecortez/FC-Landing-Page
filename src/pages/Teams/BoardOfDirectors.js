@@ -1,21 +1,21 @@
 // waiting on photos
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import H from '../images/BOD-H.png'
-import D1 from '../images/BOD-D1.png'
-import D2 from '../images/BOD-D2.png'
-import D3 from '../images/BOD-D3.png'
-import D4 from '../images/BOD-D4.png'
-import D5 from '../images/BOD-D5.png'
-import D6 from '../images/BOD-D6.png'
-import D7 from '../images/BOD-D7.png'
-import D8 from '../images/BOD-D8.png'
-import D9 from '../images/BOD-D9.png'
-import D10 from '../images/BOD-D10.png'
+import H from '../../images/BOD-H.png'
+import D1 from '../../images/BOD-D1.png'
+import D2 from '../../images/BOD-D2.png'
+import D3 from '../../images/BOD-D3.png'
+import D4 from '../../images/BOD-D4.png'
+import D5 from '../../images/BOD-D5.png'
+import D6 from '../../images/BOD-D6.png'
+import D7 from '../../images/BOD-D7.png'
+import D8 from '../../images/BOD-D8.png'
+import D9 from '../../images/BOD-D9.png'
+import D10 from '../../images/BOD-D10.png'
 
-const Teams = () => {
+const BoardOfDirectors = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -123,5 +123,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default BoardOfDirectors;
   

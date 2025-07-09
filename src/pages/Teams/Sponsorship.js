@@ -1,19 +1,19 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js';
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js';
 
-import H from '../images/SPO-H.png'
-import C1 from '../images/SPO-C1.png'
-import C2 from '../images/SPO-C2.png'
-import C3 from '../images/SPO-C3.png'
-import C4 from '../images/SPO-C4.png'
-import C5 from '../images/SPO-C5.png'
-import C6 from '../images/SPO-C6.png'
-import C7 from '../images/SPO-C7.png'
+import H from '../../images/SPO-H.png'
+import C1 from '../../images/SPO-C1.png'
+import C2 from '../../images/SPO-C2.png'
+import C3 from '../../images/SPO-C3.png'
+import C4 from '../../images/SPO-C4.png'
+import C5 from '../../images/SPO-C5.png'
+import C6 from '../../images/SPO-C6.png'
+import C7 from '../../images/SPO-C7.png'
 
 
-const TeamsSponsorship = () => {
+const Sponsorship = () => {
     return(
       <div className="teams">
         <Nav/>
@@ -79,5 +79,5 @@ const TeamsSponsorship = () => {
     )
   };
   
-  export default TeamsSponsorship;
+  export default Sponsorship;
   

@@ -1,22 +1,22 @@
 // DONE
 
-import Nav from '../components/Navbar.js'
-import Footer from '../components/Footer.js'
+import Nav from '../../components/Navbar.js'
+import Footer from '../../components/Footer.js'
 
-import H from '../images/MAR-H.png'
-import C1 from '../images/MAR-C1.png'
-import C2 from '../images/MAR-C2.png'
-import C3 from '../images/MAR-C3.png'
-import C4 from '../images/MAR-C4.png'
-import C5 from '../images/MAR-C5.png'
-import C6 from '../images/MAR-C6.png'
-import C7 from '../images/MAR-C7.png'
-import C8 from '../images/MAR-C8.png'
-import C9 from '../images/MAR-C9.png'
-import C10 from '../images/MAR-C10.png'
-import C11 from '../images/MAR-C11.png'
+import H from '../../images/MAR-H.png'
+import C1 from '../../images/MAR-C1.png'
+import C2 from '../../images/MAR-C2.png'
+import C3 from '../../images/MAR-C3.png'
+import C4 from '../../images/MAR-C4.png'
+import C5 from '../../images/MAR-C5.png'
+import C6 from '../../images/MAR-C6.png'
+import C7 from '../../images/MAR-C7.png'
+import C8 from '../../images/MAR-C8.png'
+import C9 from '../../images/MAR-C9.png'
+import C10 from '../../images/MAR-C10.png'
+import C11 from '../../images/MAR-C11.png'
 
-const TeamsMarketing = () => {
+const Marketing = () => {
     return(
         <div className="teams">
             <Nav/>
@@ -127,4 +127,4 @@ const TeamsMarketing = () => {
     )
 };
 
-export default TeamsMarketing; 
+export default Marketing; 
