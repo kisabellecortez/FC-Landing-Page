@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import header from "../../images/SpunFromGold-Header.png";
 
 const ArcanaPage = () => {
-    const imageCount = 15;
+    const imageCount = 18;
     const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/SpunFromGold/${i + 1}.png`);
 
     return (
