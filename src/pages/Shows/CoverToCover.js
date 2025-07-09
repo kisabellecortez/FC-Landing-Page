@@ -3,9 +3,6 @@ import Footer from "../../components/Footer";
 import header from "../../images/CoverToCover.png";
 
 const ArcanaPage = () => {
-    const imageCount = 15;
-    // const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/CoverToCover/${i + 1}.png`);
-
     return (
         <div>
             <Nav />
