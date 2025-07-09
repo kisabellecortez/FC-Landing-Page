@@ -1,6 +1,6 @@
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
-import header from "../../images/enchanted-header.png";
+import header from "../../images/Enchanted-Header.png";
 import { useState } from "react";
 
 const ArcanaPage = () => {
@@ -19,7 +19,7 @@ const ArcanaPage = () => {
     return (
         <div>
             <Nav />
-            <div className="header-image-section">
+            <div className="show-header">
                 <img src={header} alt="artistic" className="header-image" />
                 <div className="header-overlay">
                 </div>

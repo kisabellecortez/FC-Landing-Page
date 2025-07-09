@@ -1,6 +1,8 @@
+// DONE
+
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer.js";
-import header from "../../images/pandoras-header.png";
+import header from "../../images/PandorasBox-Header.png";
 import { useState } from "react";
 
 const ArcanaPage = () => {
@@ -19,7 +21,7 @@ const ArcanaPage = () => {
     return (
         <div>
             <Nav />
-            <div className="header-image-section">
+            <div className="show-header">
                 <img src={header} alt="artistic" className="header-image" />
                 <div className="header-overlay">
                 </div>

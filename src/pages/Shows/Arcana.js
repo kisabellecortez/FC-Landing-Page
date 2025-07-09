@@ -1,3 +1,5 @@
+// DONE
+
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
 import header from "../../images/Arcana-Header.png";
@@ -19,7 +21,7 @@ const ArcanaPage = () => {
     return (
         <div>
             <Nav />
-            <div className="header-image-section">
+            <div className="show-header">
                 <img src={header} alt="artistic" className="header-image" />
                 <div className="header-overlay">
                 </div>
@@ -28,9 +30,7 @@ const ArcanaPage = () => {
                 <div className="arcana-header">
                     <h1>ARCANA <span className="arcana-year">(2024 - 2025)</span></h1>
                     <p className="arcana-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
+                        Arcana reimagined the tage as a tarot-inspired world of fate, choice, and consequence. Drawing from Alice in Borderland, this production replaced playing card levels with richly symbolic tarot cards-each scene merging these themes into a personal journey of interpretation. From The Moon and The Sun to The Hermit and The Lovers, the show invited the audience to reflect on the meanings we assign to our own paths. Months of creative collaboration brought this vision to life, turning storytelling into purpose. All proceeds supported oneROOF Youth Services, working to end youth homelessness in our community.
                     </p>
                 </div>
                 <div className="arcana-video-wrapper">

@@ -28,15 +28,15 @@ const Footer = () => (
       </div>
       <div>
         <h4>TEAM</h4>
-        <p>Board of Directors</p>
-        <p>Artistic</p>
-        <p>Events</p>
-        <p>Finance</p>
-        <p>Marketing</p>
-        <p>Models</p>
-        <p>Public Relations</p>
-        <p>Sponsorship</p>
-        <p>Stage</p>
+        <p><a href="/teams/bod">Board of Directors</a></p>
+        <p><a href="/teams/artistic">Artistic</a></p>
+        <p><a href="/teams/events">Events</a></p>
+        <p><a href="/teams/finance">Finance</a></p>
+        <p><a href="/teams/marketing">Marketing</a></p>
+        <p><a href="/teams/models">Models</a></p>
+        <p><a href="/teams/pr">Public Relations</a></p>
+        <p><a href="/teams/sponsorship">Sponsorship</a></p>
+        <p><a href="/teams/stage">Stage</a></p>
       </div>
     </div>
     <div className="footer-logo">

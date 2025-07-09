@@ -21,13 +21,13 @@ import arcana from "../images/Arcana-Header.png";
 import spun from "../images/SpunFromGold-Header.png";
 import soul from "../images/Soul-Header.png";
 import tuesday from "../images/Tuesday-Header.png";
-import pandoras from "../images/pandoras-header.png";
-import ttd from "../images/ttd-header.png"; 
-import fcmas from "../images/fcmas-header.png";
-import enchanted from "../images/enchanted-header.png";
-import covertocover from "../images/CoverToCover.png";
+import pandoras from "../images/PandorasBox-Header.png";
+import ttd from "../images/ThroughTheDecades-Header.png"; 
+import fcmas from "../images/MusicAwards-Header.png";
+import enchanted from "../images/Enchanted-Header.png";
+import covertocover from "../images/CoverToCover-Header.png";
 import directorscut from "../images/DirectorsCut-Header.png";
-import ffc from "../images/ffc-header.png";
+import ffc from "../images/FashionForChange-Header.png";
 
 const Home = () => {
   return (

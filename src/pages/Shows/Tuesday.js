@@ -1,3 +1,5 @@
+// DONE
+
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
 import header from "../../images/Tuesday-Header.png";
@@ -19,7 +21,7 @@ const ArcanaPage = () => {
     return (
         <div>
             <Nav />
-            <div className="header-image-section">
+            <div className="show-header">
                 <img src={header} alt="artistic" className="header-image" />
                 <div className="header-overlay">
                 </div>

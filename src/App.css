@@ -380,7 +380,7 @@ p {
   margin: 1.5vh 4vh;
 }
 
-.team-header {
+.team-header, .show-header {
   position: relative;
   text-align: center;
   display: flex;
@@ -388,6 +388,10 @@ p {
   width: 100%;
   height: 90vh;
   margin-bottom: 10vh;
+}
+
+.show-header{
+  margin-top: 10vh; 
 }
 
 .team-header img {
