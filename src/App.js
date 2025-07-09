@@ -4,7 +4,6 @@ import AboutUs from './pages/About.js'
 import Events from './pages/Events.js'
 import Shows from './pages/Shows.js'
 import Sponsorship from './pages/Sponsorship.js'
-import Team from './pages/Teams.js'
 import TeamsSponsorship from './pages/TeamsSponsorship.js'
 import TeamsBOD from './pages/TeamsBOD.js'
 import TeamsArtistic from './pages/TeamsArtistic.js'
@@ -13,6 +12,7 @@ import TeamsStage from './pages/TeamsStage.js'
 import TeamsFinance from './pages/TeamsFinance.js'
 import TeamsModel from './pages/TeamsModel.js'
 import TeamsPR from './pages/TeamsPR.js'
+import TeamsMarketing from './pages/TeamsMarketing.js'
 import Home from './pages/Home.js'
 import StandFor from './pages/StandFor.js'
 import ContactUs from './pages/ContactUs.js'
@@ -111,10 +111,6 @@ function App() {
             element={<Sponsorship />}
           />
           <Route
-            path="/teams"
-            element={<Team />}
-          />
-          <Route
             path="/contact-us"
             element={<ContactUs />}
           />
@@ -133,6 +129,10 @@ function App() {
           <Route
             path="/teams/stage"
             element={<TeamsStage />}
+          />
+          <Route
+            path="/teams/marketing"
+            element={<TeamsMarketing />}
           />
           <Route
             path="/teams/finance"

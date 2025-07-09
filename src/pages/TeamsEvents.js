@@ -1,3 +1,5 @@
+// DONE
+
 import Nav from '../components/Navbar.js'
 import Footer from '../components/Footer.js';
 
@@ -11,14 +13,14 @@ import EVEC6 from '../images/EVE-C6.png'
 import EVEC7 from '../images/EVE-C7.png'
 import EVEC8 from '../images/EVE-C8.png'
 
-const Teams = () => {
+const TeamsEvents = () => {
     return(
       <div className="teams">
         <Nav/>
 
 
         {/* Events */}
-                        <div className="header-image-section">
+        <div className="team-header">
           <img src={EVEH} alt="events" className="header-image" />
           <div className="header-overlay">
             <h1>events</h1>
@@ -68,5 +70,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default TeamsEvents;
   

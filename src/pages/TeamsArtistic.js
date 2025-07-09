@@ -1,3 +1,5 @@
+// DONE
+
 import Nav from '../components/Navbar.js'
 import Footer from '../components/Footer.js';
 
@@ -11,21 +13,19 @@ import ARTC6 from '../images/ART-C6.png'
 import ARTC7 from '../images/ART-C7.png'
 import ARTC8 from '../images/ART-C8.png'
 
-
-const Teams = () => {
+const TeamsArtistic = () => {
     return(
       <div className="teams">
         <Nav/>
-        {/* Artistic */}
-                        <div className="header-image-section">
-          <img src={ART_H} alt="artistic" className="header-image" />
+        <div className="team-header">
+          <img src={ART_H} alt="artistic"/>
           <div className="header-overlay">
             <h1>artistic</h1>
           </div>
         </div>
 
         <div className="summary">
-          <p>The Artistic Team is responsible for shaping the creative vision of the production. This group includes choreographers and designers with other creative roles who work together to bring each scene to life. They oversee choreography, fashion design, lighting, music, and overall aesthetics, ensuring a cohesive and visually engaging performance. Collaboration, creativity, and strong time management are essential as they lead rehersals, attend workshops, and execute their artistic concepts on schedule.</p>
+          <p>The Artistic Team is responsible for shaping the creative vision of the production. This group includes choreographers and designers with other creative roles who work together to bring each scene to life. They oversee choreography, fashion design, lighting, music, and overall aesthetics, ensuring a choesive and visually engaging performance. Collaboration, creativity, and strong time management are essential as they lead rehearsals, creativity, and strong time management are essential as they lead rehearsals, attend workshops, and execute their artistic concepts on schedule.</p>
         </div>
 
         <div className="collage">
@@ -78,5 +78,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default TeamsArtistic;
   

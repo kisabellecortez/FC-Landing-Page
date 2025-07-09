@@ -1,21 +1,24 @@
+// DONE
+
 import Nav from '../components/Navbar.js'
 import Footer from '../components/Footer.js';
 
-import MODH from '../images/MOD-H.png'
-import MODC1 from '../images/MOD-C1.png'
-import MODC2 from '../images/MOD-C2.png'
-import MODC3 from '../images/MOD-C3.png'
-import MODC4 from '../images/MOD-C4.png'
-import MODC5 from '../images/MOD-C5.png'
-import MODC6 from '../images/MOD-C6.png'
-import MODC7 from '../images/MOD-C7.png'
-import MODC8 from '../images/MOD-C8.png'
-const Teams = () => {
+import H from '../images/MOD-H.png'
+import C1 from '../images/MOD-C1.png'
+import C2 from '../images/MOD-C2.png'
+import C3 from '../images/MOD-C3.png'
+import C4 from '../images/MOD-C4.png'
+import C5 from '../images/MOD-C5.png'
+import C6 from '../images/MOD-C6.png'
+import C7 from '../images/MOD-C7.png'
+import C8 from '../images/MOD-C8.png'
+
+const TeamsModel = () => {
     return(
       <div className="teams">
         <Nav/>
-                       <div className="header-image-section">
-          <img src={MODH} alt="models" className="header-image" />
+        <div className="team-header">
+          <img src={H} alt="models"/>
           <div className="header-overlay">
             <h1>models</h1>
           </div>
@@ -26,12 +29,12 @@ const Teams = () => {
         </div>
 
         <div className="collage">
-          <img src={MODC1} alt="model team"></img>
-          <img src={MODC2} alt="model team"></img>
-          <img src={MODC3} alt="model team"></img>
-          <img src={MODC4} alt="model team"></img>
-          <img src={MODC5} alt="model team"></img>
-          <img src={MODC6} alt="model team"></img>
+          <img src={C1} alt="model team"></img>
+          <img src={C2} alt="model team"></img>
+          <img src={C3} alt="model team"></img>
+          <img src={C4} alt="model team"></img>
+          <img src={C5} alt="model team"></img>
+          <img src={C6} alt="model team"></img>
         </div>
 
         <div className="box">
@@ -47,13 +50,13 @@ const Teams = () => {
           </div>
 
           <div className="inner-2">
-            <img src={MODC7} alt="models"></img>
+            <img src={C7} alt="models"></img>
           </div>
         </div>
 
         <div className="box">
           <div className="inner-2">
-            <img src={MODC8} alt="models"></img>
+            <img src={C8} alt="models"></img>
           </div>
 
           <div className="inner-1">
@@ -67,5 +70,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default TeamsModel;
   

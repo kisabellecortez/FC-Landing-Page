@@ -3,14 +3,14 @@ import Footer from '../components/Footer.js';
 
 import MODH from '../images/MOD-H.png'
 
-const Teams = () => {
+const TeamsFinance = () => {
     return(
       <div className="teams">
         <Nav/>
 
 
         {/* Finance */}
-                        <div className="header-image-section">
+        <div className="team-header">
           <img src={MODH} alt="finance" className="header-image" />
           <div className="header-overlay">
             <h1>finance</h1>
@@ -63,5 +63,5 @@ const Teams = () => {
     )
   };
   
-  export default Teams;
+  export default TeamsFinance;
   

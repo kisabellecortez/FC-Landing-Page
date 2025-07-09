@@ -1,23 +1,25 @@
+// DONE
+
 import Nav from '../components/Navbar.js'
 import Footer from '../components/Footer.js';
 
-import PRH from '../images/PR-H.png'
-import PRC1 from '../images/PR-C1.png'
-import PRC2 from '../images/PR-C2.png'
-import PRC3 from '../images/PR-C3.png'
-import PRC4 from '../images/PR-C4.png'
-import PRC5 from '../images/PR-C5.png'
-import PRC6 from '../images/PR-C6.png'
-import PRC7 from '../images/PR-C7.png'
-import PRC8 from '../images/PR-C8.png'
+import H from '../images/PR-H.png'
+import C1 from '../images/PR-C1.png'
+import C2 from '../images/PR-C2.png'
+import C3 from '../images/PR-C3.png'
+import C4 from '../images/PR-C4.png'
+import C5 from '../images/PR-C5.png'
+import C6 from '../images/PR-C6.png'
+import C7 from '../images/PR-C7.png'
+import C8 from '../images/PR-C8.png'
 
 const Teams = () => {
     return(
       <div className="teams">
         <Nav/>
         {/* Public Relations */}
-                <div className="header-image-section">
-          <img src={PRH} alt="public relations" className="header-image" />
+        <div className="team-header">
+          <img src={H} alt="public relations"/>
           <div className="header-overlay">
             <h1>public relations</h1>
           </div>
@@ -28,48 +30,42 @@ const Teams = () => {
         </div>
 
         <div className="collage">
-          <img src={PRC1} alt="public relations team"></img>
-          <img src={PRC2} alt="public relations team"></img>
-          <img src={PRC3} alt="public relations team"></img>
-          <img src={PRC4} alt="public relations team"></img>
-          <img src={PRC5} alt="public relations team"></img>
-          <img src={PRC6} alt="public relations team"></img>
+          <img src={C1} alt="public relations team"></img>
+          <img src={C2} alt="public relations team"></img>
+          <img src={C3} alt="public relations team"></img>
+          <img src={C4} alt="public relations team"></img>
+          <img src={C5} alt="public relations team"></img>
+          <img src={C6} alt="public relations team"></img>
         </div>
 
         <div className="box">
           <div className="inner-1">
-            <h1>Social Media Outreach Coordinator</h1>
+            <h1>External Relations Manager</h1>
             <ul>
-              <li>Manage and grow Fashion for Change's presence across all social media platforms.</li>
-            </ul>
-            <h1>Blog/Content Writer</h1>
-            <ul>
-              <li>Write engaging and on-brand content for blogs, newsletters, and social media.</li>
+              <li>Build and maintain partnersships with media outlets (radio, TV, newspapers) beyond the UW community.</li>
+              <li>Collaborate with Marketing to grow FC's brand across the tri-city region.</li>
+              <li>Identify new publicity opportunities and manage contact lists.</li>
+              <li>Represent FC with professinalism and confidence in external-facing settings.</li>
             </ul>
           </div>
 
           <div className="inner-2">
-            <img src={PRC7} alt="models"></img>
+            <img src={C7} alt="models"></img>
           </div>
         </div>
 
         <div className="box">
           <div className="inner-2">
-            <img src={PRC8} alt="models"></img>
+            <img src={C8} alt="models"></img>
           </div>
 
           <div className="inner-1">
-            <h1>Graphic Designer</h1>
+            <h1>Internal PR Manager</h1>
             <ul>
-              <li>Design eye-catching digital and print materials that reflect FC's visual identity.</li>
-            </ul>
-            <h1>Photographer</h1>
-            <ul>
-              <li>Capture high-quality photos at events and photoshoots that represent FC's style and energy.</li>
-            </ul>
-            <h1>Videographer</h1>
-            <ul>
-              <li>Film and edit promotional and event videos that showcase FC's mission and community.</li>
+              <li>Connect with campus-based media outlets to promote FC events and initiatives.</li>
+              <li>Act as the main liaison for performers during key events like Holiday Showcase and Show Day.</li>
+              <li>Strengthen relationships with other clubs and organizations at UW and WLU.</li>
+              <li>Support outreach and content brainstorming with a strong sense of professionalism.</li>
             </ul>
           </div>
         </div>

@@ -19,6 +19,7 @@ export default function Navbar() {
                         <a href="/teams/artistic">Artistic</a>
                         <a href="/teams/events">Events</a>
                         <a href="/teams/stage">Stage</a>
+                        <a href="/teams/marketing">Marketing</a>
                         <a href="/teams/finance">Finance</a>
                         <a href="/teams/pr">Public Relations</a>
                         <a href="/teams/model">Model</a>

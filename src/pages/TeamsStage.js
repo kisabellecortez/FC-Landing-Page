@@ -1,3 +1,5 @@
+// DONE
+
 import Nav from '../components/Navbar.js'
 import Footer from '../components/Footer.js';
 
@@ -10,14 +12,15 @@ import STAC5 from '../images/STA-C5.png'
 import STAC6 from '../images/STA-C6.png'
 import STAC7 from '../images/STA-C7.png'
 import STAC8 from '../images/STA-C8.png'
+import STAC9 from '../images/STA-C9.png'
 
 const Teams = () => {
     return(
       <div className="teams">
         <Nav/>
         {/* Stage */}
-                        <div className="header-image-section">
-          <img src={STAH} alt="stage" className="header-image" />
+        <div className="team-header">
+          <img src={STAH} alt="stage"/>
           <div className="header-overlay">
             <h1>stage</h1>
           </div>
@@ -63,6 +66,34 @@ const Teams = () => {
           </div>
 
           <div className="inner-1">
+            <h1>Lighting Manager</h1>
+            <h2>(aka Technical Lead)</h2>
+            <ul>
+              <li>Programming the special lighting used on stage.</li>
+            </ul>
+            <ul>
+              <li>Previous lighting/stage experience preferred.</li>
+            </ul>
+            <ul>
+              <li>Work closely with Stage Director and Artistic Team.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="inner-1">
+            <h1>Props Manager</h1>
+            <h2>(often double as stage managers)</h2>
+            <ul>
+              <li>Creating and collecting any props needed for the show.</li>
+            </ul>
+            <ul>
+              <li>Previous build/woodworking experience useful (not required).</li>
+            </ul>
+          </div>
+
+          <div className="inner-2">
+            <img src={STAC9} alt="choreographers"></img>
           </div>
         </div>
 
