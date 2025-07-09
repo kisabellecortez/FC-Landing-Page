@@ -42,20 +42,27 @@
 
 .intro-section {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom:1.5rem;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
-
 
 .intro-img {
-  width: 300px;
-  height: 400px;
+  flex: 1 1 300px;
+  max-width: 50%;
+  height: auto;
   border-radius: 10px;
-  flex-shrink: 0;
+  object-fit: cover;
 }
+
+.intro-text {
+  flex: 1 1 300px;
+  max-width: 50%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
 .homepage p {
   font-size: 1.1rem;
   line-height: 1.8;
