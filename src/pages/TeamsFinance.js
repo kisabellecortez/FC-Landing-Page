@@ -11,7 +11,7 @@ const TeamsFinance = () => {
 
         {/* Finance */}
         <div className="team-header">
-          <img src={MODH} alt="finance" className="header-image" />
+          
           <div className="header-overlay">
             <h1>finance</h1>
           </div>
@@ -22,12 +22,7 @@ const TeamsFinance = () => {
         </div>
 
         <div className="collage">
-          {/* <img src={MODC1} alt="model team"></img>
-          <img src={MODC2} alt="model team"></img>
-          <img src={MODC3} alt="model team"></img>
-          <img src={MODC4} alt="model team"></img>
-          <img src={MODC5} alt="model team"></img>
-          <img src={MODC6} alt="model team"></img> */}
+          
         </div>
 
         <div className="box">
@@ -43,13 +38,13 @@ const TeamsFinance = () => {
           </div>
 
           <div className="inner-2">
-            {/* <img src={MODC7} alt="models"></img> */}
+          
           </div>
         </div>
 
         <div className="box">
           <div className="inner-2">
-            {/* <img src={MODC8} alt="models"></img> */}
+           
           </div>
 
           <div className="inner-1">
