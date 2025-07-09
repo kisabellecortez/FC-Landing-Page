@@ -1,6 +1,6 @@
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer";
-import header from "../../images/Enchanted-Header.png";
+import header from "../../images/enchanted-header.png";
 import { useState } from "react";
 
 const ArcanaPage = () => {
