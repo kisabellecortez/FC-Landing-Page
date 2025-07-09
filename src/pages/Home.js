@@ -24,7 +24,7 @@ import tuesday from "../images/Tuesday-Header.png";
 import pandoras from "../images/PandorasBox-Header.png";
 import ttd from "../images/ThroughTheDecades-Header.png"; 
 import fcmas from "../images/MusicAwards-Header.png";
-import enchanted from "../images/MusicAwards-Header.png";
+import enchanted from "../images/Enchanted-Header.png";
 import covertocover from "../images/CoverToCover-Header.png";
 import directorscut from "../images/DirectorsCut-Header.png";
 import ffc from "../images/FashionForChange-Header.png";
