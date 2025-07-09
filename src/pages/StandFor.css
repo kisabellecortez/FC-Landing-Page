@@ -1,71 +1,111 @@
-.charity-page {
-  width: 100%;
-  padding: 4rem 2rem;
+.standfor-container {
   font-family: 'Futura', sans-serif;
-  color: black !important;
-  box-sizing: border-box;
-  background-color: white;
-    text-align: left; /* ✅ Force text to align left */
-
+  color: black;
+  background: linear-gradient(to bottom right, #d0e3ff, #e4c5f9); /* Soft gradient */
+  padding-top: 10vh;
 }
 
-.charity-section h1 {
-  font-size: 2.2rem;
+.header-image-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ✅ Make it taller (60% of screen height) */
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.charity-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.mission h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.charity-section p {
-  font-size: 1.1rem;
+.mission p {
+  font-size: 1.05rem;
   line-height: 1.8;
-  margin-bottom: 2rem;
-  max-width: none;
-}
-
-.charity-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1.5rem;
   margin-bottom: 3rem;
 }
 
-.charity-logos img {
-  max-height: 60px;
-  object-fit: contain;
-}
-
-.past-charities {
-  max-width: none;
-}
-
-.past-charities h2 {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
+.charities h2 {
+  font-size: 1.5rem;
   text-decoration: underline;
+  margin-bottom: 2rem;
 }
 
-.charity-block {
+.charity-entry {
   margin-bottom: 2.5rem;
 }
-.charity-page p,
-.charity-block p,
-.charity-section p {
-  color: black !important;
-}
 
-.charity-block h3 {
+.charity-entry h3 {
   font-size: 1.3rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.charity-block p {
+.charity-entry img {
+  max-width: 180px;
+  height: auto;
+  margin: 1rem 0;
+  display: block;
+}
+
+.charity-entry p {
   font-size: 1.05rem;
   line-height: 1.7;
-  margin: 0;
 }
 
 .and-more {
   font-style: italic;
   font-size: 1rem;
+}
+.standfor-container {
+  font-family: 'Futura', sans-serif;
+  color: black;
+  background: linear-gradient(to bottom right, #d0e3ff, #e4c5f9);
+  min-height: 100vh;
+}
+
+.black-text {
+  color: black !important;
+}
+.standfor-container, 
+.standfor-container * {
+  color: black !important;
+}
+.charity-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.charity-left {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.charity-left img {
+  margin-top: 0.5rem;
+  max-width: 160px;
+  height: auto;
+}
+
+.charity-right {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }

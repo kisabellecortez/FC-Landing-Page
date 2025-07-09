@@ -423,8 +423,10 @@ p {
 .collage {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem 2.5rem; /* 3rem vertical, 2.5rem horizontal */
-  padding: 0 2rem 2rem; /* left/right padding */
+  gap: 3rem 2.5rem;
+  /* 3rem vertical, 2.5rem horizontal */
+  padding: 0 2rem 2rem;
+  /* left/right padding */
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -432,7 +434,8 @@ p {
 
 .collage img {
   width: 100%;
-  height: 240px; /* smaller height */
+  height: 240px;
+  /* smaller height */
   object-fit: cover;
   border-radius: 12px;
 }
@@ -470,9 +473,11 @@ p {
 }
 
 .box .inner-2 img {
-  height: 300px;           /* ✅ Match screenshot */
+  height: 300px;
+  /* ✅ Match screenshot */
   width: auto;
-  object-fit: contain;     /* Shrink to fit, not crop */
+  object-fit: contain;
+  /* Shrink to fit, not crop */
   border-radius: 10px;
   display: block;
   max-width: 100%;
@@ -517,19 +522,6 @@ p {
   border-radius: 10px;
 }
 
-/* Header section */
-.header-image-section {
-  position: relative;
-  width: 100%;
-  height: 35vh;
-}
-
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .header-overlay {
   position: absolute;
   bottom: 0rem;
@@ -557,14 +549,17 @@ p {
   padding: 3rem 5vw;
   max-width: 100%;
 }
+
 .section-light h2,
 .section-light p,
 .section-light .event-info h3,
 .section-light .event-info p {
   color: white !important;
 }
+
 .event-entry {
-  border-bottom: 1px solid #444; /* better contrast than #eee on black */
+  border-bottom: 1px solid #444;
+  /* better contrast than #eee on black */
 }
 
 
@@ -666,7 +661,8 @@ p {
 .about-section {
   background-color: black;
   color: white;
-  padding: 2rem 2rem 1rem 2rem; /* top, right, bottom, left */
+  padding: 2rem 2rem 1rem 2rem;
+  /* top, right, bottom, left */
   width: 100%;
   box-sizing: border-box;
 }
@@ -805,7 +801,8 @@ p {
   font-size: 16px;
   font-weight: bold;
   text-transform: lowercase;
-  background: rgba(0, 0, 0, 0.4); /* subtle dark overlay for contrast */
+  background: rgba(0, 0, 0, 0.4);
+  /* subtle dark overlay for contrast */
   padding: 4px 0;
 }
 
@@ -1033,16 +1030,19 @@ p {
   max-width: 900px;
   margin: 0 auto;
   background-color: white;
-  color: black; /* fixes summary text */
+  color: black;
+  /* fixes summary text */
 }
 
 .arcana-video-placeholder {
-  background-color: white; /* make it white */
+  background-color: white;
+  /* make it white */
   border: 1px solid #ccc;
   padding: 3rem 2rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #555; /* darken for readability */
+  color: #555;
+  /* darken for readability */
   margin-bottom: 3rem;
   border-radius: 8px;
   font-style: italic;
@@ -1051,7 +1051,8 @@ p {
 
 .arcana-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* force 3 per row */
+  grid-template-columns: repeat(3, 1fr);
+  /* force 3 per row */
   gap: 1.5rem;
   justify-items: center;
 }
@@ -1080,12 +1081,17 @@ p {
   padding: 0 2rem;
   box-sizing: border-box;
 }
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 even columns */
-  gap: 24px; /* or whatever spacing you want */
-  padding: 0 24px; /* horizontal padding to prevent images touching screen edge */
-  max-width: 100vw; /* prevent overflow */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 even columns */
+  gap: 24px;
+  /* or whatever spacing you want */
+  padding: 0 24px;
+  /* horizontal padding to prevent images touching screen edge */
+  max-width: 100vw;
+  /* prevent overflow */
   box-sizing: border-box;
 }
 
@@ -1097,12 +1103,15 @@ p {
   border-radius: 8px;
   display: block;
 }
+
 .home-container {
-    background-image: url('./images/home-bg.png'); /* adjust path */
+  background-image: url('./images/home-bg.png');
+  /* adjust path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* optional */
+  background-attachment: fixed;
+  /* optional */
   min-height: 100vh;
   padding: 1rem;
   background-color: #000;
@@ -1116,7 +1125,8 @@ p {
   width: 80%;
   max-width: 280px;
   display: block;
-  margin: 12vh auto 1.5rem auto; /* 👈 Pushes it below fixed navbar */
+  margin: 12vh auto 1.5rem auto;
+  /* 👈 Pushes it below fixed navbar */
 }
 
 
@@ -1242,4 +1252,18 @@ p {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.header-image-section {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* consistent height */
+  overflow: hidden;
+}
+
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
