@@ -25,7 +25,7 @@ const Marketing = () => {
             <div className="team-header">
                 <img src={H} alt="events" className="header-image" />
                 <div className="header-overlay">
-                <h1>events</h1>
+                <h1>marketing</h1>
                 </div>
             </div>
     
