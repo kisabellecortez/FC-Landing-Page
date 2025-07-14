@@ -38,64 +38,53 @@ const StandFor = () => {
           <section className="charities">
             <h2>Past Charities</h2>
 
-            <div className="charity-row">
-              <div className="charity-left">
-                <strong>Oneroof Youth Services</strong>
-                <img src={logoOneRoof} alt="Oneroof Youth Services Logo" />
+            <div className="charity-entry">
+              <div className="charity-header-row">
+                <h3 className="charity-title">Oneroof Youth Services</h3>
+                <img src={logoOneRoof} alt="Oneroof Youth Services Logo" className="charity-logo" />
               </div>
-              <p className="black-text charity-right">
-                oneROOF Youth Services is committed to providing for the safety, support and overall
-                well-being of youth who are experiencing homelessness, and youth who are at-risk of
-                homelessness, aged 12–25, in Waterloo Region.
+              <p className="charity-description">
+                oneROOF Youth Services is committed to providing for the safety, support and overall well-being of youth who are experiencing homelessness, and youth who are at-risk of homelessness, aged 12–25, in Waterloo Region.
               </p>
             </div>
 
-            <div className="charity-row">
-              <div className="charity-left">
-                <strong>KW Humane Society</strong>
-                <img src={logoHumane} alt="KW Humane Society Logo" />
+            <div className="charity-entry">
+              <div className="charity-header-row">
+                <img src={logoHumane} alt="KW Humane Society Logo" className="charity-logo" />
               </div>
-              <p className="black-text charity-right">
-                KW Humane Society provides shelter, medical care, and adoption services for abandoned and
-                neglected animals in the Waterloo Region, while promoting responsible pet ownership and
-                animal welfare.
+              <p className="charity-description">
+                KW Humane Society provides shelter, medical care, and adoption services for abandoned and neglected animals in the Waterloo Region, while promoting responsible pet ownership and animal welfare.
               </p>
             </div>
 
-            <div className="charity-row">
-              <div className="charity-left">
-                <strong>Extend A Family Waterloo</strong>
-                <img src={logoExtendAFamily} alt="Extend A Family Logo" />
+            <div className="charity-entry">
+              <div className="charity-header-row">
+                <h3 className="charity-title">Extend A Family Waterloo</h3>
+                <img src={logoExtendAFamily} alt="Extend A Family Waterloo Logo" className="charity-logo" />
               </div>
-              <p className="black-text charity-right">
-                Extend-A-Family Waterloo fosters meaningful relationships and inclusive opportunities for
-                individuals with developmental disabilities and their families, supporting them in leading
-                fulfilling lives within their communities.
+              <p className="charity-description">
+                Extend-A-Family Waterloo fosters meaningful relationships and inclusive opportunities for individuals with developmental disabilities and their families, supporting them in leading fulfilling lives within their communities.
               </p>
             </div>
 
-            <div className="charity-row">
-              <div className="charity-left">
-                <strong>Family & Children’s Services of the Waterloo Region</strong>
-                <img src={logoFCS} alt="FCS Waterloo Logo" />
+            <div className="charity-entry">
+              <div className="charity-header-row">
+                <img src={logoFCS} alt="Family & Children’s Services Logo" className="charity-logo" />
               </div>
-              <p className="black-text charity-right">
-                The Family and Children’s Services Foundation supports vulnerable children, youth, and
-                families by funding enrichment programs, educational opportunities, and emergency
-                assistance for those impacted by abuse, neglect, or family crisis.
+              <p className="charity-description">
+                The Family and Children’s Services Foundation supports vulnerable children, youth, and families by funding enrichment programs, educational opportunities, and emergency assistance for those impacted by abuse, neglect, or family crisis.
               </p>
             </div>
 
-            <div className="charity-row">
-              <div className="charity-left">
-                <strong>WE Charity</strong>
+            <div className="charity-entry">
+              <div className="charity-header-row">
+                <h3 className="charity-title">WE Charity</h3>
               </div>
-              <p className="black-text charity-right">
-                WE Charity focused on empowering youth to become agents of change through service-learning
-                and global citizenship programs, supporting education, clean water, and economic
-                opportunity initiatives both locally and globally.
+              <p className="charity-description">
+                WE Charity focused on empowering youth to become agents of change through service-learning and global citizenship programs, supporting education, clean water, and economic opportunity initiatives both locally and globally.
               </p>
             </div>
+
 
             <p className="and-more black-text"><em>and many more...</em></p>
           </section>
