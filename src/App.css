@@ -118,7 +118,7 @@ div {
   text-transform: uppercase;
 }
 
-.footer-grid p {
+.footer-grid p, .footer-grid a {
   margin: 0.25rem 0;
   font-size: 0.9rem;
   color: #cfcfcf;
