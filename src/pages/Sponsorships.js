@@ -34,7 +34,7 @@ const Sponsorship = () => {
 
             <div className="sponsor-buttons">
               <a
-                href="/sponsorship-package.pdf"
+                href="/SponsorshipPackage.pdf"
                 className="sponsor-button white-button"
                 target="_blank"
                 rel="noopener noreferrer"
