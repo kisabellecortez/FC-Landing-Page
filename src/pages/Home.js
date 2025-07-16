@@ -82,11 +82,11 @@ const Home = () => {
             <img src={stage} alt="Stage Team" />
             <span>stage</span>
           </a>
-          <a href="/teams/stage" className="carousel-tile">
+          <a href="/teams/marketing" className="carousel-tile">
             <img src={marketing} alt="Marketing Team" />
             <span>marketing</span>
           </a>
-          <a href="/teams/stage" className="carousel-tile">
+          <a href="/teams/finance" className="carousel-tile">
             <img src={finance} alt="STA Team" />
             <span>finance</span>
           </a>
