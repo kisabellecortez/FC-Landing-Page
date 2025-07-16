@@ -15,6 +15,13 @@ import D8 from '../../images/BOD-D8.png'
 import D9 from '../../images/BOD-D9.png'
 import D10 from '../../images/BOD-D10.png'
 
+import C1 from '../../images/Teams/BoardOfDirectors/BOD-C1.png'
+import C2 from '../../images/Teams/BoardOfDirectors/BOD-C2.png'
+import C3 from '../../images/Teams/BoardOfDirectors/BOD-C3.png'
+import C4 from '../../images/Teams/BoardOfDirectors/BOD-C4.png'
+import C5 from '../../images/Teams/BoardOfDirectors/BOD-C5.png'
+import C6 from '../../images/Teams/BoardOfDirectors/BOD-C6.png'
+
 const BoardOfDirectors = () => {
   return (
     <div className="teams">
@@ -115,6 +122,15 @@ const BoardOfDirectors = () => {
           </div>
         </div>
 
+      </div>
+
+      <div className="collage">
+        <img src={C1} alt="Board of Directors"></img>
+        <img src={C2} alt="Board of Directors"></img>
+        <img src={C3} alt="Board of Directors"></img>
+        <img src={C4} alt="Board of Directors"></img>
+        <img src={C5} alt="Board of Directors"></img>
+        <img src={C6} alt="Board of Directors"></img>
       </div>
       <Footer />
     </div>

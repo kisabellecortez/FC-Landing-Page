@@ -1,6 +1,17 @@
 import Nav from '../../components/Navbar.js'
 import Footer from '../../components/Footer.js';
 
+import H from '../../images/Teams/Finance/FIN_H.png'
+
+import C1 from '../../images/Teams/Finance/FIN_C1.png'
+import C2 from '../../images/Teams/Finance/FIN_C2.png'
+import C3 from '../../images/Teams/Finance/FIN_C3.png'
+import C4 from '../../images/Teams/Finance/FIN_C4.png'
+import C5 from '../../images/Teams/Finance/FIN_C5.png'
+import C6 from '../../images/Teams/Finance/FIN_C6.png'
+import C7 from '../../images/Teams/Finance/FIN_C7.png'
+import C8 from '../../images/Teams/Finance/FIN_C8.png'
+
 const Finance = () => {
     return(
       <div className="teams">
@@ -9,7 +20,7 @@ const Finance = () => {
 
         {/* Finance */}
         <div className="team-header">
-          
+          <img src={H} alt="finance team"></img>
           <div className="header-overlay">
             <h1>finance</h1>
           </div>
@@ -20,7 +31,12 @@ const Finance = () => {
         </div>
 
         <div className="collage">
-          
+          <img src={C1} alt="finance team"></img>
+          <img src={C2} alt="finance team"></img>
+          <img src={C3} alt="finance team"></img>
+          <img src={C4} alt="finance team"></img>
+          <img src={C5} alt="finance team"></img>
+          <img src={C6} alt="finance team"></img>
         </div>
 
         <div className="box">
@@ -36,13 +52,13 @@ const Finance = () => {
           </div>
 
           <div className="inner-2">
-          
+            <img src={C7} alt="finance team"></img>
           </div>
         </div>
 
         <div className="box">
           <div className="inner-2">
-           
+            <img src={C8} alt="finance team"></img>
           </div>
 
           <div className="inner-1">
