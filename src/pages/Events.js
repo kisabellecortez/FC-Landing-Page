@@ -53,7 +53,7 @@ const events = [
 
 const Events = () => {
   return (
-    <div>
+    <div className="page">
       <Nav />
       <div className="show-header">
         <img src={events_H} alt="events" className="header-image" />

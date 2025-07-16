@@ -393,10 +393,6 @@ p {
   margin-bottom: 10vh; 
 }
 
-.show-header{
-  margin-top: 10vh; 
-}
-
 .team-header img {
   height: 100%;
   width: 100%;
@@ -1159,43 +1155,6 @@ body {
   border-radius: 0.3rem;
 }
 
-.section-title {
-  margin: 1rem 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: lowercase;
-  text-align: left;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 0.5rem;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 0.5rem;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel-tile {
-  flex: 0 0 auto;
-  width: 130px;
-  height: 80px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  scroll-snap-align: start;
-}
-
-.carousel-tile img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: inherit;
-}
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1238,24 +1197,112 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.header-image-section {
-  position: relative;
-  height: 100dvh;
-  width: 100%;
-  overflow: hidden;
-}
-
-
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 /* Magazine Page */
 .magazine-page{
   height: 100vh;
   width: 100%; 
   margin-top: 10vh; 
+}
+
+.page{
+  margin-top: 10vh; 
+}
+
+.header{
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90vh; 
+}
+
+.header img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.home{
+  background-color: black; 
+  width: 100%; 
+  height: auto; 
+  padding-top: 10vh; 
+}
+
+.home-collage{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  align-items: center; 
+}
+
+.small{
+  width: 86vh; 
+}
+
+.big{
+  width: 180vh; 
+}
+
+.image{
+  position: relative; 
+  display: inline-block; 
+}
+
+.small, .big{
+  display: block; 
+  margin: 5vh 0 5vh 0; 
+}
+
+.image h1{
+  color: white; 
+  font-size: 8vh; 
+  z-index: 5; 
+  position: absolute;
+  bottom: 40px; 
+  left: 10px; 
+  margin: 0; 
+  padding: 5px 10px;  
+  border-radius: 5px; 
+}
+
+.section-title {
+  margin-left: 5vh; 
+  font-size: 55px;
+  text-align: left;
+  color: white; 
+}
+
+.carousel {
+  margin-left: 5vh; 
+  margin-right: 5vh; 
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-tile {
+  position: relative; 
+  flex: 0 0 auto;
+  width: 80vh;
+  height: 50vh;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.carousel-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
 }

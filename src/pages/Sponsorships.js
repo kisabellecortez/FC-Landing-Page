@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Sponsorship = () => {
   return (
-    <div>
+    <div className="page">
       <Navbar />
       <div>
         {/* Header */}

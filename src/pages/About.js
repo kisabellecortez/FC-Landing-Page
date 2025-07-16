@@ -17,7 +17,7 @@ import { Link } from "react-router-dom"; // <-- import Link at the top
 
 const About = () => {
   return (
-    <div>
+    <div className="page">
       <Navbar />
       <div>
         {/* Header Section */}

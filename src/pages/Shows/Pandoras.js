@@ -19,7 +19,7 @@ const ArcanaPage = () => {
         setSelectedImage(null);
     };
     return (
-        <div>
+        <div className="page">
             <Nav />
             <div className="show-header">
                 <img src={header} alt="artistic" className="header-image" />
