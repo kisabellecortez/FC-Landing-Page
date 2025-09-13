@@ -1,0 +1,41 @@
+from  flask import Flask, jsonify
+import boto3
+import os
+
+app = Flask(__name__)
+
+s3 = boto3.client(
+    "s3", 
+    region_name="us-east-2", 
+    aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"), 
+    aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY")
+)
+
+BUCKET_NAME = "fashion-for-change"
+@app.route("/get-photos", methods=["GET"])
+
+def get_photos():
+    try:
+        response = s3.list_objects_v2(Bucket=BUCKET_NAME)
+
+        urls = []
+
+        for obj in response.get("Contents", []):
+            key = obj["Key"]
+
+            url = s3.generate_presigned_url(
+                "get_object", 
+                Params={"Bucket": BUCKET_NAME, "Key": key}, 
+                ExpiresIn = 60,
+            )
+
+            urls.append(url)
+
+        return jsonify({"urls": urls})
+
+    except Exception as e:
+        print("Error: ", e)
+        return jsonify({"error": str(e)}), 500
+    
+if __name__ == "__main__":
+    app.run(debug="True", port=4000)
