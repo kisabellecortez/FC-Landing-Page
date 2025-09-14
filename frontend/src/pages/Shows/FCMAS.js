@@ -1,13 +1,23 @@
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer.js";
-import header from "../../images/MusicAwards-Header.png";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ImagesContext } from "../../context/ImagesContext.js"
 
 const ArcanaPage = () => {
-    const imageCount = 15;
-    const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/fcmas/${i + 1}.png`);
-
+    const imagesArray = useContext(ImagesContext);
+    const folderPath = "Shows/FCMAS/"
+    const collageImgNum = Array.from({ length : 15 }, (_, i) => i+1)
     const [selectedImage, setSelectedImage] = useState(null);
+
+    const header = imagesArray.find(
+        (url) => url.includes(folderPath) && url.includes(`Header.png`)
+    )
+
+    const collageImages = collageImgNum.map((num) => {
+        return imagesArray.find(
+            (url) => url.includes(folderPath) && url.includes(`${num}.png`)
+        )
+    }).filter((url) => url)
 
     const handleImageClick = (url) => {
         setSelectedImage(url);
@@ -35,9 +45,15 @@ const ArcanaPage = () => {
 
                 <div className="gallery-container">
                     <div className="gallery-grid">
-                        {imageUrls.map((url, i) => (
-                            <img key={i} src={url} alt={`past show ${i + 1}`} className="gallery-img" onClick={() => handleImageClick(url)}
-                                style={{ cursor: "pointer" }} />
+                        {collageImages.map((url, index) => (
+                            <img 
+                                className="gallery-img"
+                                key={index}
+                                src={url}
+                                alt={`Fashion for Change Music Awards ${index + 1}`}
+                                crossOrigin="anonymous"
+                                   onClick={() => handleImageClick(url)}
+                            />
                         ))}
                     </div>
                 </div>

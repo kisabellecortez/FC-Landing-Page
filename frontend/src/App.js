@@ -4,10 +4,11 @@ import AboutUs from './pages/About.js'
 import Events from './pages/Events.js'
 import Shows from './pages/Shows.js'
 import Sponsorship from './pages/Sponsorships.js'
+import { ImagesProvider } from './context/ImagesContext.js'
 
 // Teams pages
 import TeamSponsorship from './pages/Teams/Sponsorship.js'
-import TeamsBOD from './pages/Teams/BoardOfDirectors.js'
+import BoardOfDirectors from './pages/Teams/BoardOfDirectors.js'
 import TeamsArtistic from './pages/Teams/Artistic.js'
 import TeamsEvents from './pages/Teams/Events.js'
 import TeamsStage from './pages/Teams/Stage.js'
@@ -40,134 +41,135 @@ import Magazine from './pages/magazine.js'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />}></Route>
-          <Route
-            path="/"
-            element={<Home />}
-          />
-          <Route
-            path="/about-us"
-            element={<AboutUs />}
-          />
-          <Route
-            path="/past-shows/academy-awards"
-            element={<ShowsAcademyAwards/>}
-          />
-          <Route
-            path="/past-shows/arcana"
-            element={<ShowsArcana/>}
-          />
-          <Route
-            path="/past-shows/cover-to-cover"
-            element={<ShowsCoverToCover/>}
-          />
-          <Route
-            path="/past-shows/directors-cut"
-            element={<ShowsDirectorsCut/>}
-          />
-          <Route
-            path="/past-shows/soul"
-            element={<ShowsSoul/>}
-          />
-          <Route
-            path="/past-shows/spun-from-gold"
-            element={<ShowsSpunFromGold/>}
-          />
-          <Route
-            path="/past-shows/tuesday"
-            element={<ShowsTuesday/>}
-          />
-          <Route
-            path="/past-shows/ffc"
-            element={<ShowsFFC />}
-          />
-          <Route
-            path="/past-shows/enchanted"
-            element={<ShowsEnchanted />}
-          />
-          <Route
-            path="/past-shows/pandoras"
-            element={<ShowsPandoras />}
-          />
-          <Route
-            path="/past-shows/fcmas"
-            element={<ShowsFCMAS />}
-          />
-          <Route
-            path="/past-shows/sytygs"
-            element={<ShowsSYTYGS />}
-          />
-          <Route
-            path="/past-shows/ttd"
-            element={<ShowsTTD />}
-          />
+      <ImagesProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />}></Route>
+            <Route
+              path="/"
+              element={<Home />}
+            />
+            <Route
+              path="/about-us"
+              element={<AboutUs />}
+            />
+            <Route
+              path="/past-shows/academy-awards"
+              element={<ShowsAcademyAwards/>}
+            />
+            <Route
+              path="/past-shows/arcana"
+              element={<ShowsArcana/>}
+            />
+            <Route
+              path="/past-shows/cover-to-cover"
+              element={<ShowsCoverToCover/>}
+            />
+            <Route
+              path="/past-shows/directors-cut"
+              element={<ShowsDirectorsCut/>}
+            />
+            <Route
+              path="/past-shows/soul"
+              element={<ShowsSoul/>}
+            />
+            <Route
+              path="/past-shows/spun-from-gold"
+              element={<ShowsSpunFromGold/>}
+            />
+            <Route
+              path="/past-shows/tuesday"
+              element={<ShowsTuesday/>}
+            />
+            <Route
+              path="/past-shows/ffc"
+              element={<ShowsFFC />}
+            />
+            <Route
+              path="/past-shows/enchanted"
+              element={<ShowsEnchanted />}
+            />
+            <Route
+              path="/past-shows/pandoras"
+              element={<ShowsPandoras />}
+            />
+            <Route
+              path="/past-shows/fcmas"
+              element={<ShowsFCMAS />}
+            />
+            <Route
+              path="/past-shows/sytygs"
+              element={<ShowsSYTYGS />}
+            />
+            <Route
+              path="/past-shows/ttd"
+              element={<ShowsTTD />}
+            />
 
-          <Route
-            path="/events"
-            element={<Events />}
-          />
-          <Route
-            path="/stand-for"
-            element={<StandFor />}
-          />
-          <Route
-            path="/sponsorship"
-            element={<Sponsorship />}
-          />
-          <Route
-            path="/contact-us"
-            element={<ContactUs />}
-          />
-          <Route
-            path="/teams/bod"
-            element={<TeamsBOD />}
-          />
-          <Route
-            path="/teams/artistic"
-            element={<TeamsArtistic />}
-          />
-          <Route
-            path="/teams/events"
-            element={<TeamsEvents />}
-          />
-          <Route
-            path="/teams/stage"
-            element={<TeamsStage />}
-          />
-          <Route
-            path="/teams/marketing"
-            element={<TeamsMarketing />}
-          />
-          <Route
-            path="/teams/finance"
-            element={<TeamsFinance />}
-          />
-          <Route
-            path="/teams/sponsorship"
-            element={<TeamSponsorship />}
-          />
-          <Route
-            path="/teams/model"
-            element={<TeamsModel />}
-          />
-          <Route
-            path="/teams/pr"
-            element={<TeamsPR />}
-          />
-          <Route
-            path="/shows"
-            element={<Shows />}
-          />
+            <Route
+              path="/events"
+              element={<Events />}
+            />
+            <Route
+              path="/stand-for"
+              element={<StandFor />}
+            />
+            <Route
+              path="/sponsorship"
+              element={<Sponsorship />}
+            />
+            <Route
+              path="/contact-us"
+              element={<ContactUs />}
+            />
+            <Route
+              path="/teams/bod"
+              element={<BoardOfDirectors />}
+            />
+            <Route
+              path="/teams/artistic"
+              element={<TeamsArtistic />}
+            />
+            <Route
+              path="/teams/events"
+              element={<TeamsEvents />}
+            />
+            <Route
+              path="/teams/stage"
+              element={<TeamsStage />}
+            />
+            <Route
+              path="/teams/marketing"
+              element={<TeamsMarketing />}
+            />
+            <Route
+              path="/teams/finance"
+              element={<TeamsFinance />}
+            />
+            <Route
+              path="/teams/sponsorship"
+              element={<TeamSponsorship />}
+            />
+            <Route
+              path="/teams/model"
+              element={<TeamsModel />}
+            />
+            <Route
+              path="/teams/pr"
+              element={<TeamsPR />}
+            />
+            <Route
+              path="/shows"
+              element={<Shows />}
+            />
 
-          <Route
-            path="/magazine"
-            element={<Magazine />}
-          />
-        </Routes>
-      </BrowserRouter>
-
+            <Route
+              path="/magazine"
+              element={<Magazine />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </ImagesProvider>
     </div>
   );
 }

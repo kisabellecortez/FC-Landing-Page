@@ -2,22 +2,33 @@
 
 import Nav from '../../components/Navbar.js'
 import Footer from "../../components/Footer.js";
-import header from "../../images/Arcana-Header.png";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ImagesContext } from "../../context/ImagesContext.js"
 
 const ArcanaPage = () => {
-    const imageCount = 15;
-    const imageUrls = Array.from({ length: imageCount }, (_, i) => `/images/past-shows/Arcana/${i + 1}.png`);
-
+    const imagesArray = useContext(ImagesContext);
+    const folderPath = "Shows/Arcana/"
+    const collageImgNum = Array.from({ length : 15 }, (_, i) => i+1)
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const handleImageClick = (url) => {
-        setSelectedImage(url);
-    };
+    const header = imagesArray.find(
+        (url) => url.includes(folderPath) && url.includes(`Header.png`)
+    )
 
-    const closeModal = () => {
+    const collageImages = collageImgNum.map((num) => {
+        return imagesArray.find(
+            (url) => url.includes(folderPath) && url.includes(`${num}.png`)
+        )
+    }).filter((url) => url)
+
+    const handleImageClick = (url) => { 
+        setSelectedImage(url);
+    }; 
+
+    const closeModal = () => {  
         setSelectedImage(null);
     };
+
     return (
         <div className="page">
             <Nav />
@@ -45,13 +56,17 @@ const ArcanaPage = () => {
                     ></iframe>
                 </div>
 
-
-
                 <div className="gallery-container">
                     <div className="gallery-grid">
-                        {imageUrls.map((url, i) => (
-                            <img key={i} src={url} alt={`past show ${i + 1}`} className="gallery-img" onClick={() => handleImageClick(url)}
-                                style={{ cursor: "pointer" }} />
+                        {collageImages.map((url, index) => (
+                            <img 
+                                className="gallery-img"
+                                key={index}
+                                src={url}
+                                alt={`Arcana ${index + 1}`}
+                                crossOrigin="anonymous"
+                                   onClick={() => handleImageClick(url)}
+                            />
                         ))}
                     </div>
                 </div>

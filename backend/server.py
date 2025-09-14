@@ -2,7 +2,9 @@ from  flask import Flask, jsonify
 import boto3
 import os
 
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 s3 = boto3.client(
     "s3", 

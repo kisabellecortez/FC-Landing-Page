@@ -1,21 +1,42 @@
 // src/pages/About.js
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { ImagesContext } from "../context/ImagesContext.js"
 import "./About.css";
 import Typewriter from 'typewriter-effect';
 import headerImage from "../images/AboutUs-Header.png";
 import groupImage from "../images/about-group.png";
 import team1 from "../images/team-bod.png";
-import team2 from "../images/team-artistic.png";
-import team3 from "../images/team-events.png";
-import PRH from "../images/PR-H.png";
-import MODH from "../images/MOD-H.png";
-import SPOH from "../images/SPO-H.png";
-import STAH from "../images/STA-H.png";
 import { Link } from "react-router-dom"; // <-- import Link at the top
 
 const About = () => {
+  const imagesArray = useContext(ImagesContext)
+
+  const ARTH = imagesArray.find(
+    (url) => url.includes(`Teams/Artistic`) && url.includes(`Header.png`)
+  )
+
+  const EVEH = imagesArray.find(
+    (url) => url.includes(`Teams/Events`) && url.includes(`Header.png`)
+  )
+
+  const PRH = imagesArray.find(
+    (url) => url.includes(`Teams/PR`) && url.includes(`Header.png`)
+  )
+
+  const MODH = imagesArray.find(
+    (url) => url.includes(`Teams/Model`) && url.includes(`Header.png`)
+  )
+
+  const SPOH = imagesArray.find(
+    (url) => url.includes(`Teams/Sponsorship`) && url.includes(`Header.png`)
+  )
+
+  const STAH = imagesArray.find(
+    (url) => url.includes(`Teams/Stage`) && url.includes(`Header.png`)
+  )
+
   return (
     <div className="page">
       <Navbar />
@@ -29,7 +50,7 @@ const About = () => {
         </div>
         
         <div className="homepage">
-      <h1>hi! welcome to fc :)</h1>
+      <h1>hi! welcome to fc :</h1>
       <h2 className="typing-line">
         a place for{' '} <span className="typewriter">
           <Typewriter
@@ -81,14 +102,14 @@ const About = () => {
 
           <Link to="/teams/artistic" className="team-card">
           <div className="team-card">
-            <img src={team2} alt="Artistic" />
+            <img src={ARTH} alt="Artistic" />
             <p className="team-label">artistic</p>
           </div>
           </Link>
 
           <Link to="/teams/events" className="team-card">
           <div className="team-card">
-            <img src={team3} alt="Events" />
+            <img src={EVEH} alt="Events" />
             <p className="team-label">events</p>
           </div>
           </Link>
