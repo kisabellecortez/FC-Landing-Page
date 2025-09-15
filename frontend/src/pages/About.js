@@ -7,11 +7,14 @@ import "./About.css";
 import Typewriter from 'typewriter-effect';
 import headerImage from "../images/AboutUs-Header.png";
 import groupImage from "../images/about-group.png";
-import team1 from "../images/team-bod.png";
 import { Link } from "react-router-dom"; // <-- import Link at the top
 
 const About = () => {
   const imagesArray = useContext(ImagesContext)
+
+  const BODH = imagesArray.find(
+    (url) => url.includes(`Teams/BOD`) && url.includes(`Header.png`)
+  )
 
   const ARTH = imagesArray.find(
     (url) => url.includes(`Teams/Artistic`) && url.includes(`Header.png`)
@@ -95,7 +98,7 @@ const About = () => {
         <div className="carousel-scroll">
           <Link to="/teams/bod" className="team-card">
           <div className="team-card">
-            <img src={team1} alt="BOD" />
+            <img src={BODH} alt="BOD" />
             <p className="team-label">bod</p>
           </div>
           </Link>
