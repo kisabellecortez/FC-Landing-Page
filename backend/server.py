@@ -33,7 +33,7 @@ def get_photos():
             url = s3.generate_presigned_url(
                 "get_object", 
                 Params={"Bucket": BUCKET_NAME, "Key": key}, 
-                ExpiresIn = 60,
+                ExpiresIn = 3600,
             )
 
             urls.append(url)
