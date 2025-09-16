@@ -6,13 +6,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-s3 = boto3.client(
-    "s3", 
-    region_name="us-east-2", 
-    aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"), 
-    aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY")
-)
-
 BUCKET_NAME = "fashion-for-change"
 
 @app.route("/")
@@ -23,6 +16,13 @@ def home():
 
 def get_photos():
     try:
+        s3 = boto3.client(
+            "s3", 
+            region_name="us-east-2", 
+            aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"), 
+            aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY")
+        )
+        
         response = s3.list_objects_v2(Bucket=BUCKET_NAME)
 
         urls = []
