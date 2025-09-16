@@ -6,7 +6,7 @@ export const ImagesProvider  = ({ children }) => {
     const [imagesArray, setImagesArray] = useState([]); 
 
     useEffect(() => {
-        fetch("https://fashion-for-change.com/get-photos")
+        fetch("https://fc-landing-page-production.up.railway.app//get-photos")
             .then((res) => res.json())
             .then((data) => setImagesArray(data.urls))
             .catch((err) => console.error(err));
