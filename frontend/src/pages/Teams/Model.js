@@ -42,14 +42,12 @@ const Model = () => {
       </div>
 
       <div className="collage">
-        {collageImages.map((url, index) => (
-          <img
-            key={index}
-            src={url}
-            alt={`Artistic Team ${index + 1}`}
-            crossOrigin="anonymous"
-          />
-        ))}
+        <img src={collageImages[0]} alt="director"></img>
+        <img src={collageImages[1]} alt="director"></img>
+        <img src={collageImages[2]} alt="director"></img>
+        <img src={collageImages[3]} alt="director"></img>
+        <img src={collageImages[4]} alt="director"></img>
+        <img src={collageImages[5]} alt="director"></img>
       </div>
 
       <div className="box">
