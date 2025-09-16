@@ -14,6 +14,11 @@ s3 = boto3.client(
 )
 
 BUCKET_NAME = "fashion-for-change"
+
+@app.route("/")
+def home():
+    return "Backend is running!", 200
+
 @app.route("/get-photos", methods=["GET"])
 
 def get_photos():
